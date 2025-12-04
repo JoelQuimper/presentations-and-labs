@@ -1,7 +1,7 @@
 ## Lab Guide
-Welcome to this simple automation lab! This document will help you navigate through the main steps required to to build a simple automation solution using Logic App, Microsoft Graph API and PowerShell. Follow the instructions below to get started.
+Welcome to this simple automation lab! This document will help you navigate through the main steps required to to build a simple automation solution using Logic App, Azure Automation, Managed Identities, Microsoft Graph API and PowerShell. Follow the instructions below to get started.
 
-The lab is build so a user can request to see its profile information from Entra using Microsoft Graph API and PowerShell by simply filling a form in SharePoint.
+The lab is build so a user can request to see its profile information from Entra by simply filling a form in SharePoint.
 
 ### Getting Started
 1. **Set Up Your Environment**: Ensure you have all the necessary software and tools installed. 
@@ -12,23 +12,7 @@ The lab is build so a user can request to see its profile information from Entra
     - Install Azure CLI [How to install the Azure CLI | Microsoft Learn](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
     - Ideally a Visual Studio Subscription, this includes a test tenant plus monthly Azure credits.
 
-2. **Create the App Registration**: Follow the steps below to create an app registration in Entra.
-    - In the Entra admin center, navigate to "App registrations" 
-    - Click on "New registration"
-        -  Name your application (e.g., "LabGraphApp"). Keep the default settings for supported account types and redirect URI.
-        - Under Manage>API permissions>Add permissions
-        - Select the Graph API category with the Application Permission (not the Delegated permissions) 
-        - Search for "User.ReadBasic.All"
-    - After permissions have been created, you will have to grant admin consent.  It should look like this:
-    ![API Permissions](images/api-permission.png)
-    - Create a client secret and note down the Application (client) ID, Directory (tenant) ID, and the client secret value. 
-        - Under  Manage>Certificates & Secrets
-        - Toggle to Clients Secrets, and add client secret
-        - Provide a Description and leave the recommended expiry
-        - Ensure that you copy the value of the secret not its id. 
-    - **WARNING**: If you are doing this lab on your production tenant, make sure to securely use and store the client secret, as it provides access to your read all your users.
-
-3. **Set Up SharePoint List**: Create a SharePoint list to capture user requests.
+2. **Set Up SharePoint List**: Create a SharePoint list to capture user requests.
     - Create a new SharePoint site or use an existing one.
     - Create a new list named "UserProfileRequests".
     ![new-list](images/new-list.png)
@@ -39,18 +23,7 @@ The lab is build so a user can request to see its profile information from Entra
     - It should look like this 
     ![new-list-2](images/new-list-2.png)
 
-4. **Create and test the PowerShell Script**: Create the PowerShell script that will interact with Microsoft Graph API to fetch user profile information.
-    - Clone this repository to your local machine.
-    - Open the cloned repository in Visual Studio Code.
-    - Find the "Get-UserBasicDetails.ps1" file and open it.
-    ![code](images/code.png)
-    - Update the script with your app registration details (client ID, tenant ID, client secret).  
-    **IMPORTANT**: we are putting the client secret in plain text for simplicity in this lab. You should never do this in real life. You should consider using Azure Key Vault to handle secrets. Some sample of this are available in this repository.
-    - Save the script.
-    - Test the script locally to ensure it works as expected. You can do this by running the script in Visual Studio Code or PowerShell terminal. Make sure it retrieves user profile information correctly.
-    ![pwsh-result](images/pwsh-result.png)
-    
-5. **Create a Azure Automation Account**: Create an Azure Automation Account to host and run the PowerShell script.
+3. **Create a Azure Automation Account**: Create an Azure Automation Account to host and run the PowerShell script.
     - In the Azure portal, [navigate to Resource groups](https://portal.azure.com/#browse/resourcegroups) and create a new resource group (e.g., "rg-automation-workshop").
     ![create-rg](images/create-rg.png)  
     **WARNING** again if you are doing this on your production tenant, make sure to create it in a safe manner.
@@ -60,13 +33,35 @@ The lab is build so a user can request to see its profile information from Entra
     - Name the Automation Account (e.g., "aa-automation-workshop"), select the appropriate region, and create it with the rest of the settings as default.
     ![create-aa-2](images/create-aa-2.png)
     - In the Automation Account, navigate to "Runtime Environments" and create a new PowerShell 7.4 runtime environment (e.g., "GraphPowerShell"). Make sure to add the necessary modules: Microsoft.Graph.Authentication, Microsoft.Graph.Users.
-    ![create-runtime](images/create-runtime.png)
+
+4. Configure the Automation Account managed identity to add permissions to call Microsoft Graph API. There is no way to do this in the portal, it must be done with a script
+    - In the Automation Account, navigate to the "Identity" section and enable the System Assigned managed identity.
+    ![enable-identity](images/enable-identity.png)
+    - Copy the Object ID of the managed identity, you will need it in the next step.
+    - Clone this repository to your local machine and open it in code.
+    ```powershell
+    cd <your-working-directory>
+    git clone https://github.com/JoelQuimper/presentations-and-labs.git
+    cd presentations-and-labs
+    code .
+    ```
+    - Find the "Set-AutomationAccountPermissions.ps1" file and open it.
+    - Replace the first line with the Object ID of the managed identity copied earlier.
+    ![replace-id](images/replace-id.png)
+    - Open a PowerShell terminal in Visual Studio Code.
+    - Run the script to assign the necessary permissions to the managed identity.
+    ```powershell
+    cd Labs\M365-Automation
+    .\Set-AutomationAccountPermissions.ps1
+    ```    
+5. **Create a Runbook in your Azure Automation Account**: Create an Azure Automation Runbook to host the PowerShell script that will process user profile requests.
+    - Navigate to the Automation Account created earlier.
     - Navigate to Runbooks and create a new Runbook. Call it "ProcessUserProfileRequests".  Make sure to select the runtime environment created earlier.
     ![create-runbook](images/create-runbook.png)
-    - When the runbook editor opens, replace the default code with the PowerShell script from step 4.  Make sure you have replaced the app registration details with the ones created in step 2.
+    - When the runbook editor opens, replace the default code with the content of the PowerShell script called Get-UserBasicDetails.ps1.
     ![editor](images/editor.png)
     - Save and publish the Runbook.
-    - Test the Runbook to ensure it works as expected by clicking the "Start" button in the Runbook overview page.
+    - Test the Runbook to ensure it works as expected by clicking the "Start" button in the Runbook overview page.  Give a valid email address in the UserEmailAddress parameter.
     ![start-runbook](images/start-runbook.png)
     - You should see the output in the job details page.
     ![job-detail](images/job-detail.png)
@@ -77,7 +72,7 @@ The lab is build so a user can request to see its profile information from Entra
     - Create a new Logic App.
     ![create-logicapp](images/create-logicapp.png)
     - Choose the "Consumption" plan.
-    - Name the Logic App (e.g., "logic-user-profile-listener-<your initials>"). The reason to add your initials is to avoid name conflicts.
+    - Name the Logic App (e.g., "logic-user-profile-listener-jq"). The reason I normally add my initials (jq) is to avoid name conflicts. You could put anything you want here as long as it is unique.
     ![create-logicapp-2](images/create-logicapp-2.png)
     - Enable the Logic App identity under the "Identity" section.
     ![logicapp-identity](images/logicapp-identity.png)
