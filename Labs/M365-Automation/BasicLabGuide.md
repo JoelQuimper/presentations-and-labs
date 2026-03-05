@@ -34,7 +34,7 @@ The lab is build so a user can request to see its profile information from Entra
     ![create-aa-2](images/create-aa-2.png)
     - In the Automation Account, navigate to "Runtime Environments" and create a new PowerShell 7.4 runtime environment (e.g., "GraphPowerShell"). Make sure to add the necessary modules: Microsoft.Graph.Authentication, Microsoft.Graph.Users.
 
-4. Configure the Automation Account managed identity to add permissions to call Microsoft Graph API. There is no way to do this in the portal, it must be done with a script
+4. **Configure the Automation Account managed identity**: Add permissions to call Microsoft Graph API. There is no way to do this in the portal, it must be done with a script
     - In the Automation Account, navigate to the "Identity" section and enable the System Assigned managed identity.
     ![enable-identity](images/enable-identity.png)
     - Copy the Object ID of the managed identity, you will need it in the next step.
