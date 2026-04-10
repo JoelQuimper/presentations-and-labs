@@ -27,7 +27,8 @@ try {
     
     if (-not (Test-Path $chocoPath)) {
         Write-Log "Installing Chocolatey..."
-        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+        # Set execution policy at LocalMachine scope (requires elevation, which Custom Script Extension has)
+        Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine -Force -ErrorAction SilentlyContinue
         [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
         iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
         Write-Log "Chocolatey installation completed"
@@ -44,7 +45,7 @@ catch {
 # ============================================================================
 try {
     Write-Log "Installing SQL Server Management Studio (latest)..."
-    & choco install ssms -y --no-progress 2>&1 | Tee-Object -FilePath 'C:\install-tools.log' -Append
+    & 'C:\ProgramData\chocolatey\choco.exe' install ssms -y --no-progress 2>&1 | Tee-Object -FilePath 'C:\install-tools.log' -Append
     Write-Log "SSMS installation completed"
 }
 catch {
