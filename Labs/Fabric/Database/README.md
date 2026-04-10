@@ -16,14 +16,14 @@ Sample K12 education database for Fabric end-to-end lab environment.
 
 ## Quick Start
 
-### Step 0: Deploy Infrastructure
+### Step 1: Deploy Infrastructure
 Set up Azure resources (SQL Database, VM, networking). See `infra/DEPLOYMENT.md` for detailed steps. The deployment takes 10-15 minutes and creates all required resources.
 
-### Step 1: Create Database Schema
+### Step 2: Create Database Schema
 Run `K12_Schema.sql` in SSMS or Azure Query Editor against your SQL Database.
 
-### Step 2: Load Data
-Run `K12_BulkInsert.sql` in SSMS to load all CSV files from `sample_data/`. The script includes a verification query showing expected record counts.
+### Step 3: Load Data
+Run `K12_BulkInsert.sql` in SSMS to load all CSV files from `SampleData/`. The script includes a verification query showing expected record counts.
 
 ## Data Model
 
@@ -62,7 +62,7 @@ pip install pandas
 python generate_sample_data.py
 ```
 
-This creates a `sample_data/` folder with 48 files:
+This creates files in the `SampleData/` folder with 48 total files:
 - **Base tables** (8 files): Schools, Teachers, Students, GradeLevels, Classes, Enrollment, StudentSuccessMetrics, StudentInterventions
 - **Split by school** (40 files): Attendance_School_1.csv through Attendance_School_20.csv, GradeAssessments_School_1.csv through GradeAssessments_School_20.csv
   - Splitting keeps large transaction tables under 50MB each (Attendance files: 6.67-13.40 MB, GradeAssessments files: 2.71-5.30 MB)
