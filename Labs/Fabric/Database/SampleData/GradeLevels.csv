@@ -1,0 +1,14 @@
+GradeLevelID,GradeName,GradeNumber,AgeRangeMin,AgeRangeMax
+1,Kindergarten,0,4,6
+2,1st Grade,1,5,7
+3,2nd Grade,2,6,8
+4,3rd Grade,3,7,9
+5,4th Grade,4,8,10
+6,5th Grade,5,9,11
+7,6th Grade,6,10,12
+8,7th Grade,7,11,13
+9,8th Grade,8,12,14
+10,9th Grade,9,13,15
+11,10th Grade,10,14,16
+12,11th Grade,11,15,17
+13,12th Grade,12,16,18

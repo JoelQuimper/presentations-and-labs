@@ -1,0 +1,424 @@
+ClassID,SchoolID,GradeLevelID,TeacherID,ClassName,RoomNumber,Subject,Period,MaxCapacity,AcademicYear,SchoolYear,IsActive
+1,1,1,8,Grade 1 - Section 1 - Technology,101,Music,1,25,2025,2024-2025,1
+2,1,1,12,Grade 1 - Section 2 - Language Arts,102,English,2,25,2025,2024-2025,1
+3,1,1,4,Grade 1 - Section 3 - Technology,103,Science,3,25,2025,2024-2025,1
+4,1,2,13,Grade 2 - Section 1 - English,201,Math,1,25,2025,2024-2025,1
+5,1,2,14,Grade 2 - Section 2 - Science,202,Social Studies,2,25,2025,2024-2025,1
+6,1,2,10,Grade 2 - Section 3 - PE,203,Art,3,25,2025,2024-2025,1
+7,1,3,13,Grade 3 - Section 1 - Art,301,Art,1,25,2025,2024-2025,1
+8,1,3,15,Grade 3 - Section 2 - PE,302,Social Studies,2,25,2025,2024-2025,1
+9,1,3,3,Grade 3 - Section 3 - Social Studies,303,Science,3,25,2025,2024-2025,1
+10,1,4,4,Grade 4 - Section 1 - Science,401,English,1,25,2025,2024-2025,1
+11,1,4,6,Grade 4 - Section 2 - Language Arts,402,Language Arts,2,25,2025,2024-2025,1
+12,1,4,11,Grade 4 - Section 3 - Music,403,English,3,25,2025,2024-2025,1
+13,1,5,12,Grade 5 - Section 1 - Social Studies,501,Language Arts,1,25,2025,2024-2025,1
+14,1,5,10,Grade 5 - Section 2 - Language Arts,502,PE,2,25,2025,2024-2025,1
+15,1,5,4,Grade 5 - Section 3 - English,503,Science,3,25,2025,2024-2025,1
+16,2,6,30,Period 1 - Grade 6 - PE,601,Math,1,30,2025,2024-2025,1
+17,2,6,21,Period 2 - Grade 6 - Art,602,Science,2,30,2025,2024-2025,1
+18,2,6,19,Period 3 - Grade 6 - Social Studies,603,Art,3,30,2025,2024-2025,1
+19,2,6,24,Period 4 - Grade 6 - Technology,604,Math,4,30,2025,2024-2025,1
+20,2,6,28,Period 5 - Grade 6 - PE,605,PE,5,30,2025,2024-2025,1
+21,2,6,31,Period 6 - Grade 6 - Science,606,Math,6,30,2025,2024-2025,1
+22,2,7,24,Period 1 - Grade 7 - Language Arts,701,Technology,1,30,2025,2024-2025,1
+23,2,7,29,Period 2 - Grade 7 - Technology,702,Social Studies,2,30,2025,2024-2025,1
+24,2,7,19,Period 3 - Grade 7 - Language Arts,703,English,3,30,2025,2024-2025,1
+25,2,7,30,Period 4 - Grade 7 - Science,704,English,4,30,2025,2024-2025,1
+26,2,7,18,Period 5 - Grade 7 - Math,705,Social Studies,5,30,2025,2024-2025,1
+27,2,7,20,Period 6 - Grade 7 - Social Studies,706,Music,6,30,2025,2024-2025,1
+28,2,8,23,Period 1 - Grade 8 - English,801,PE,1,30,2025,2024-2025,1
+29,2,8,32,Period 2 - Grade 8 - English,802,Math,2,30,2025,2024-2025,1
+30,2,8,19,Period 3 - Grade 8 - Social Studies,803,Language Arts,3,30,2025,2024-2025,1
+31,2,8,30,Period 4 - Grade 8 - Science,804,English,4,30,2025,2024-2025,1
+32,2,8,32,Period 5 - Grade 8 - Art,805,English,5,30,2025,2024-2025,1
+33,2,8,18,Period 6 - Grade 8 - Language Arts,806,Math,6,30,2025,2024-2025,1
+34,3,9,38,Period 1 - Grade 9 - Music,901,Music,1,32,2025,2024-2025,1
+35,3,9,48,Period 2 - Grade 9 - Math,902,Music,2,32,2025,2024-2025,1
+36,3,9,54,Period 3 - Grade 9 - Music,903,Science,3,32,2025,2024-2025,1
+37,3,9,44,Period 4 - Grade 9 - Social Studies,904,Science,4,32,2025,2024-2025,1
+38,3,9,41,Period 5 - Grade 9 - PE,905,Language Arts,5,32,2025,2024-2025,1
+39,3,9,37,Period 6 - Grade 9 - Math,906,Social Studies,6,32,2025,2024-2025,1
+40,3,9,53,Period 7 - Grade 9 - PE,907,Language Arts,7,32,2025,2024-2025,1
+41,3,9,46,Period 8 - Grade 9 - Technology,908,Language Arts,8,32,2025,2024-2025,1
+42,3,10,34,Period 1 - Grade 10 - English,1001,PE,1,32,2025,2024-2025,1
+43,3,10,45,Period 2 - Grade 10 - Science,1002,Music,2,32,2025,2024-2025,1
+44,3,10,39,Period 3 - Grade 10 - Technology,1003,Social Studies,3,32,2025,2024-2025,1
+45,3,10,53,Period 4 - Grade 10 - Technology,1004,Math,4,32,2025,2024-2025,1
+46,3,10,45,Period 5 - Grade 10 - Art,1005,Language Arts,5,32,2025,2024-2025,1
+47,3,10,50,Period 6 - Grade 10 - Language Arts,1006,Art,6,32,2025,2024-2025,1
+48,3,10,51,Period 7 - Grade 10 - Technology,1007,Art,7,32,2025,2024-2025,1
+49,3,10,45,Period 8 - Grade 10 - PE,1008,Science,8,32,2025,2024-2025,1
+50,3,11,33,Period 1 - Grade 11 - Art,1101,Social Studies,1,32,2025,2024-2025,1
+51,3,11,33,Period 2 - Grade 11 - PE,1102,Math,2,32,2025,2024-2025,1
+52,3,11,48,Period 3 - Grade 11 - Technology,1103,Art,3,32,2025,2024-2025,1
+53,3,11,51,Period 4 - Grade 11 - Social Studies,1104,Science,4,32,2025,2024-2025,1
+54,3,11,36,Period 5 - Grade 11 - Social Studies,1105,Social Studies,5,32,2025,2024-2025,1
+55,3,11,41,Period 6 - Grade 11 - Technology,1106,Math,6,32,2025,2024-2025,1
+56,3,11,40,Period 7 - Grade 11 - Music,1107,Art,7,32,2025,2024-2025,1
+57,3,11,38,Period 8 - Grade 11 - Science,1108,Social Studies,8,32,2025,2024-2025,1
+58,3,12,51,Period 1 - Grade 12 - Art,1201,Art,1,32,2025,2024-2025,1
+59,3,12,51,Period 2 - Grade 12 - Math,1202,Art,2,32,2025,2024-2025,1
+60,3,12,51,Period 3 - Grade 12 - Science,1203,Social Studies,3,32,2025,2024-2025,1
+61,3,12,48,Period 4 - Grade 12 - Technology,1204,PE,4,32,2025,2024-2025,1
+62,3,12,38,Period 5 - Grade 12 - Language Arts,1205,Math,5,32,2025,2024-2025,1
+63,3,12,35,Period 6 - Grade 12 - Math,1206,Social Studies,6,32,2025,2024-2025,1
+64,3,12,52,Period 7 - Grade 12 - Social Studies,1207,Math,7,32,2025,2024-2025,1
+65,3,12,49,Period 8 - Grade 12 - Language Arts,1208,Math,8,32,2025,2024-2025,1
+66,4,1,65,Grade 1 - Section 1 - Social Studies,101,Science,1,25,2025,2024-2025,1
+67,4,1,65,Grade 1 - Section 2 - Science,102,Art,2,25,2025,2024-2025,1
+68,4,1,56,Grade 1 - Section 3 - Math,103,Science,3,25,2025,2024-2025,1
+69,4,2,73,Grade 2 - Section 1 - Science,201,English,1,25,2025,2024-2025,1
+70,4,2,71,Grade 2 - Section 2 - Art,202,English,2,25,2025,2024-2025,1
+71,4,2,66,Grade 2 - Section 3 - Music,203,English,3,25,2025,2024-2025,1
+72,4,3,65,Grade 3 - Section 1 - PE,301,Art,1,25,2025,2024-2025,1
+73,4,3,59,Grade 3 - Section 2 - Science,302,Music,2,25,2025,2024-2025,1
+74,4,3,75,Grade 3 - Section 3 - Language Arts,303,Art,3,25,2025,2024-2025,1
+75,4,4,60,Grade 4 - Section 1 - Technology,401,Art,1,25,2025,2024-2025,1
+76,4,4,62,Grade 4 - Section 2 - Science,402,Music,2,25,2025,2024-2025,1
+77,4,4,64,Grade 4 - Section 3 - PE,403,Science,3,25,2025,2024-2025,1
+78,4,5,60,Grade 5 - Section 1 - Math,501,Music,1,25,2025,2024-2025,1
+79,4,5,73,Grade 5 - Section 2 - Math,502,Science,2,25,2025,2024-2025,1
+80,4,5,74,Grade 5 - Section 3 - Art,503,Social Studies,3,25,2025,2024-2025,1
+81,5,6,94,Period 1 - Grade 6 - English,601,Language Arts,1,30,2025,2024-2025,1
+82,5,6,80,Period 2 - Grade 6 - Art,602,English,2,30,2025,2024-2025,1
+83,5,6,83,Period 3 - Grade 6 - Art,603,Art,3,30,2025,2024-2025,1
+84,5,6,81,Period 4 - Grade 6 - English,604,Art,4,30,2025,2024-2025,1
+85,5,6,90,Period 5 - Grade 6 - Math,605,PE,5,30,2025,2024-2025,1
+86,5,6,82,Period 6 - Grade 6 - Social Studies,606,English,6,30,2025,2024-2025,1
+87,5,7,87,Period 1 - Grade 7 - PE,701,English,1,30,2025,2024-2025,1
+88,5,7,76,Period 2 - Grade 7 - Math,702,Music,2,30,2025,2024-2025,1
+89,5,7,90,Period 3 - Grade 7 - Music,703,Science,3,30,2025,2024-2025,1
+90,5,7,89,Period 4 - Grade 7 - Language Arts,704,Music,4,30,2025,2024-2025,1
+91,5,7,87,Period 5 - Grade 7 - Technology,705,Music,5,30,2025,2024-2025,1
+92,5,7,79,Period 6 - Grade 7 - Language Arts,706,Social Studies,6,30,2025,2024-2025,1
+93,5,8,81,Period 1 - Grade 8 - Language Arts,801,English,1,30,2025,2024-2025,1
+94,5,8,77,Period 2 - Grade 8 - PE,802,Math,2,30,2025,2024-2025,1
+95,5,8,86,Period 3 - Grade 8 - PE,803,English,3,30,2025,2024-2025,1
+96,5,8,78,Period 4 - Grade 8 - Art,804,Science,4,30,2025,2024-2025,1
+97,5,8,88,Period 5 - Grade 8 - Science,805,English,5,30,2025,2024-2025,1
+98,5,8,93,Period 6 - Grade 8 - English,806,Art,6,30,2025,2024-2025,1
+99,6,9,111,Period 1 - Grade 9 - Math,901,Music,1,32,2025,2024-2025,1
+100,6,9,101,Period 2 - Grade 9 - Music,902,Science,2,32,2025,2024-2025,1
+101,6,9,97,Period 3 - Grade 9 - English,903,Art,3,32,2025,2024-2025,1
+102,6,9,102,Period 4 - Grade 9 - Social Studies,904,Music,4,32,2025,2024-2025,1
+103,6,9,113,Period 5 - Grade 9 - Technology,905,PE,5,32,2025,2024-2025,1
+104,6,9,105,Period 6 - Grade 9 - PE,906,Social Studies,6,32,2025,2024-2025,1
+105,6,9,99,Period 7 - Grade 9 - Math,907,Music,7,32,2025,2024-2025,1
+106,6,9,113,Period 8 - Grade 9 - Language Arts,908,Science,8,32,2025,2024-2025,1
+107,6,10,97,Period 1 - Grade 10 - Art,1001,Math,1,32,2025,2024-2025,1
+108,6,10,109,Period 2 - Grade 10 - English,1002,PE,2,32,2025,2024-2025,1
+109,6,10,111,Period 3 - Grade 10 - Social Studies,1003,English,3,32,2025,2024-2025,1
+110,6,10,96,Period 4 - Grade 10 - Social Studies,1004,Science,4,32,2025,2024-2025,1
+111,6,10,105,Period 5 - Grade 10 - English,1005,Language Arts,5,32,2025,2024-2025,1
+112,6,10,99,Period 6 - Grade 10 - PE,1006,Music,6,32,2025,2024-2025,1
+113,6,10,111,Period 7 - Grade 10 - Language Arts,1007,PE,7,32,2025,2024-2025,1
+114,6,10,98,Period 8 - Grade 10 - Technology,1008,Music,8,32,2025,2024-2025,1
+115,6,11,101,Period 1 - Grade 11 - Art,1101,Music,1,32,2025,2024-2025,1
+116,6,11,107,Period 2 - Grade 11 - Science,1102,Language Arts,2,32,2025,2024-2025,1
+117,6,11,97,Period 3 - Grade 11 - PE,1103,Language Arts,3,32,2025,2024-2025,1
+118,6,11,110,Period 4 - Grade 11 - PE,1104,Social Studies,4,32,2025,2024-2025,1
+119,6,11,104,Period 5 - Grade 11 - Math,1105,Science,5,32,2025,2024-2025,1
+120,6,11,99,Period 6 - Grade 11 - English,1106,Art,6,32,2025,2024-2025,1
+121,6,11,113,Period 7 - Grade 11 - Music,1107,Social Studies,7,32,2025,2024-2025,1
+122,6,11,113,Period 8 - Grade 11 - Math,1108,Music,8,32,2025,2024-2025,1
+123,6,12,112,Period 1 - Grade 12 - Music,1201,Technology,1,32,2025,2024-2025,1
+124,6,12,111,Period 2 - Grade 12 - Social Studies,1202,Language Arts,2,32,2025,2024-2025,1
+125,6,12,105,Period 3 - Grade 12 - English,1203,Music,3,32,2025,2024-2025,1
+126,6,12,97,Period 4 - Grade 12 - Technology,1204,Technology,4,32,2025,2024-2025,1
+127,6,12,100,Period 5 - Grade 12 - English,1205,Language Arts,5,32,2025,2024-2025,1
+128,6,12,101,Period 6 - Grade 12 - Science,1206,Social Studies,6,32,2025,2024-2025,1
+129,6,12,102,Period 7 - Grade 12 - Science,1207,Math,7,32,2025,2024-2025,1
+130,6,12,109,Period 8 - Grade 12 - English,1208,Music,8,32,2025,2024-2025,1
+131,7,1,120,Grade 1 - Section 1 - Science,101,PE,1,25,2025,2024-2025,1
+132,7,1,124,Grade 1 - Section 2 - English,102,English,2,25,2025,2024-2025,1
+133,7,1,126,Grade 1 - Section 3 - Technology,103,Music,3,25,2025,2024-2025,1
+134,7,2,124,Grade 2 - Section 1 - PE,201,Technology,1,25,2025,2024-2025,1
+135,7,2,128,Grade 2 - Section 2 - Math,202,Technology,2,25,2025,2024-2025,1
+136,7,2,127,Grade 2 - Section 3 - English,203,Music,3,25,2025,2024-2025,1
+137,7,3,118,Grade 3 - Section 1 - Science,301,English,1,25,2025,2024-2025,1
+138,7,3,117,Grade 3 - Section 2 - English,302,PE,2,25,2025,2024-2025,1
+139,7,3,125,Grade 3 - Section 3 - Music,303,PE,3,25,2025,2024-2025,1
+140,7,4,126,Grade 4 - Section 1 - Language Arts,401,Language Arts,1,25,2025,2024-2025,1
+141,7,4,115,Grade 4 - Section 2 - Science,402,PE,2,25,2025,2024-2025,1
+142,7,4,126,Grade 4 - Section 3 - Science,403,Music,3,25,2025,2024-2025,1
+143,7,5,115,Grade 5 - Section 1 - Music,501,Art,1,25,2025,2024-2025,1
+144,7,5,121,Grade 5 - Section 2 - Math,502,Language Arts,2,25,2025,2024-2025,1
+145,7,5,122,Grade 5 - Section 3 - Art,503,Math,3,25,2025,2024-2025,1
+146,8,6,141,Period 1 - Grade 6 - PE,601,PE,1,30,2025,2024-2025,1
+147,8,6,139,Period 2 - Grade 6 - Language Arts,602,English,2,30,2025,2024-2025,1
+148,8,6,158,Period 3 - Grade 6 - Social Studies,603,Science,3,30,2025,2024-2025,1
+149,8,6,140,Period 4 - Grade 6 - Language Arts,604,Art,4,30,2025,2024-2025,1
+150,8,6,139,Period 5 - Grade 6 - Music,605,English,5,30,2025,2024-2025,1
+151,8,6,137,Period 6 - Grade 6 - Language Arts,606,Social Studies,6,30,2025,2024-2025,1
+152,8,7,157,Period 1 - Grade 7 - Music,701,Language Arts,1,30,2025,2024-2025,1
+153,8,7,155,Period 2 - Grade 7 - Technology,702,Art,2,30,2025,2024-2025,1
+154,8,7,157,Period 3 - Grade 7 - Math,703,Technology,3,30,2025,2024-2025,1
+155,8,7,156,Period 4 - Grade 7 - Science,704,English,4,30,2025,2024-2025,1
+156,8,7,140,Period 5 - Grade 7 - Technology,705,Music,5,30,2025,2024-2025,1
+157,8,7,135,Period 6 - Grade 7 - Technology,706,Math,6,30,2025,2024-2025,1
+158,8,8,136,Period 1 - Grade 8 - Social Studies,801,Social Studies,1,30,2025,2024-2025,1
+159,8,8,157,Period 2 - Grade 8 - Math,802,Social Studies,2,30,2025,2024-2025,1
+160,8,8,132,Period 3 - Grade 8 - Language Arts,803,Math,3,30,2025,2024-2025,1
+161,8,8,142,Period 4 - Grade 8 - Social Studies,804,PE,4,30,2025,2024-2025,1
+162,8,8,142,Period 5 - Grade 8 - Language Arts,805,Technology,5,30,2025,2024-2025,1
+163,8,8,143,Period 6 - Grade 8 - English,806,Math,6,30,2025,2024-2025,1
+164,9,9,166,Period 1 - Grade 9 - Art,901,Language Arts,1,32,2025,2024-2025,1
+165,9,9,173,Period 2 - Grade 9 - Science,902,Language Arts,2,32,2025,2024-2025,1
+166,9,9,170,Period 3 - Grade 9 - Art,903,Science,3,32,2025,2024-2025,1
+167,9,9,167,Period 4 - Grade 9 - English,904,PE,4,32,2025,2024-2025,1
+168,9,9,159,Period 5 - Grade 9 - Music,905,Math,5,32,2025,2024-2025,1
+169,9,9,164,Period 6 - Grade 9 - Social Studies,906,Social Studies,6,32,2025,2024-2025,1
+170,9,9,166,Period 7 - Grade 9 - Social Studies,907,PE,7,32,2025,2024-2025,1
+171,9,9,172,Period 8 - Grade 9 - Technology,908,Math,8,32,2025,2024-2025,1
+172,9,10,159,Period 1 - Grade 10 - Language Arts,1001,Science,1,32,2025,2024-2025,1
+173,9,10,164,Period 2 - Grade 10 - Math,1002,Social Studies,2,32,2025,2024-2025,1
+174,9,10,167,Period 3 - Grade 10 - PE,1003,PE,3,32,2025,2024-2025,1
+175,9,10,172,Period 4 - Grade 10 - Music,1004,Art,4,32,2025,2024-2025,1
+176,9,10,173,Period 5 - Grade 10 - PE,1005,Social Studies,5,32,2025,2024-2025,1
+177,9,10,173,Period 6 - Grade 10 - PE,1006,Technology,6,32,2025,2024-2025,1
+178,9,10,171,Period 7 - Grade 10 - English,1007,Math,7,32,2025,2024-2025,1
+179,9,10,175,Period 8 - Grade 10 - Art,1008,Technology,8,32,2025,2024-2025,1
+180,9,11,168,Period 1 - Grade 11 - PE,1101,English,1,32,2025,2024-2025,1
+181,9,11,174,Period 2 - Grade 11 - English,1102,Art,2,32,2025,2024-2025,1
+182,9,11,167,Period 3 - Grade 11 - Art,1103,PE,3,32,2025,2024-2025,1
+183,9,11,167,Period 4 - Grade 11 - PE,1104,Social Studies,4,32,2025,2024-2025,1
+184,9,11,163,Period 5 - Grade 11 - Technology,1105,Social Studies,5,32,2025,2024-2025,1
+185,9,11,160,Period 6 - Grade 11 - Music,1106,Art,6,32,2025,2024-2025,1
+186,9,11,163,Period 7 - Grade 11 - Math,1107,Language Arts,7,32,2025,2024-2025,1
+187,9,11,168,Period 8 - Grade 11 - PE,1108,Music,8,32,2025,2024-2025,1
+188,9,12,171,Period 1 - Grade 12 - Music,1201,Math,1,32,2025,2024-2025,1
+189,9,12,165,Period 2 - Grade 12 - Art,1202,Social Studies,2,32,2025,2024-2025,1
+190,9,12,174,Period 3 - Grade 12 - Art,1203,Technology,3,32,2025,2024-2025,1
+191,9,12,168,Period 4 - Grade 12 - Science,1204,Technology,4,32,2025,2024-2025,1
+192,9,12,164,Period 5 - Grade 12 - PE,1205,English,5,32,2025,2024-2025,1
+193,9,12,174,Period 6 - Grade 12 - Science,1206,PE,6,32,2025,2024-2025,1
+194,9,12,164,Period 7 - Grade 12 - Art,1207,English,7,32,2025,2024-2025,1
+195,9,12,166,Period 8 - Grade 12 - Art,1208,Social Studies,8,32,2025,2024-2025,1
+196,10,1,199,Grade 1 - Section 1 - PE,101,Music,1,25,2025,2024-2025,1
+197,10,1,186,Grade 1 - Section 2 - Art,102,PE,2,25,2025,2024-2025,1
+198,10,1,194,Grade 1 - Section 3 - PE,103,Language Arts,3,25,2025,2024-2025,1
+199,10,2,179,Grade 2 - Section 1 - Language Arts,201,Math,1,25,2025,2024-2025,1
+200,10,2,196,Grade 2 - Section 2 - English,202,Language Arts,2,25,2025,2024-2025,1
+201,10,2,182,Grade 2 - Section 3 - Technology,203,English,3,25,2025,2024-2025,1
+202,10,3,197,Grade 3 - Section 1 - Music,301,Technology,1,25,2025,2024-2025,1
+203,10,3,185,Grade 3 - Section 2 - Music,302,Math,2,25,2025,2024-2025,1
+204,10,3,180,Grade 3 - Section 3 - Science,303,Social Studies,3,25,2025,2024-2025,1
+205,10,4,186,Grade 4 - Section 1 - Music,401,Language Arts,1,25,2025,2024-2025,1
+206,10,4,180,Grade 4 - Section 2 - Art,402,Science,2,25,2025,2024-2025,1
+207,10,4,200,Grade 4 - Section 3 - English,403,Language Arts,3,25,2025,2024-2025,1
+208,10,5,186,Grade 5 - Section 1 - Science,501,Art,1,25,2025,2024-2025,1
+209,10,5,196,Grade 5 - Section 2 - Math,502,Math,2,25,2025,2024-2025,1
+210,10,5,190,Grade 5 - Section 3 - PE,503,Social Studies,3,25,2025,2024-2025,1
+211,11,6,213,Period 1 - Grade 6 - Science,601,Science,1,30,2025,2024-2025,1
+212,11,6,208,Period 2 - Grade 6 - English,602,Science,2,30,2025,2024-2025,1
+213,11,6,210,Period 3 - Grade 6 - Music,603,Music,3,30,2025,2024-2025,1
+214,11,6,207,Period 4 - Grade 6 - Music,604,Language Arts,4,30,2025,2024-2025,1
+215,11,6,207,Period 5 - Grade 6 - Math,605,Math,5,30,2025,2024-2025,1
+216,11,6,209,Period 6 - Grade 6 - Social Studies,606,Art,6,30,2025,2024-2025,1
+217,11,7,201,Period 1 - Grade 7 - Art,701,Technology,1,30,2025,2024-2025,1
+218,11,7,204,Period 2 - Grade 7 - Math,702,Math,2,30,2025,2024-2025,1
+219,11,7,211,Period 3 - Grade 7 - Social Studies,703,Social Studies,3,30,2025,2024-2025,1
+220,11,7,212,Period 4 - Grade 7 - Art,704,PE,4,30,2025,2024-2025,1
+221,11,7,203,Period 5 - Grade 7 - English,705,Music,5,30,2025,2024-2025,1
+222,11,7,209,Period 6 - Grade 7 - PE,706,Science,6,30,2025,2024-2025,1
+223,11,8,202,Period 1 - Grade 8 - Math,801,PE,1,30,2025,2024-2025,1
+224,11,8,205,Period 2 - Grade 8 - Language Arts,802,Technology,2,30,2025,2024-2025,1
+225,11,8,210,Period 3 - Grade 8 - Technology,803,Art,3,30,2025,2024-2025,1
+226,11,8,207,Period 4 - Grade 8 - Science,804,Art,4,30,2025,2024-2025,1
+227,11,8,215,Period 5 - Grade 8 - Language Arts,805,Art,5,30,2025,2024-2025,1
+228,11,8,213,Period 6 - Grade 8 - Social Studies,806,Science,6,30,2025,2024-2025,1
+229,12,9,230,Period 1 - Grade 9 - Music,901,Math,1,32,2025,2024-2025,1
+230,12,9,219,Period 2 - Grade 9 - Social Studies,902,Science,2,32,2025,2024-2025,1
+231,12,9,219,Period 3 - Grade 9 - Math,903,Technology,3,32,2025,2024-2025,1
+232,12,9,218,Period 4 - Grade 9 - English,904,Art,4,32,2025,2024-2025,1
+233,12,9,227,Period 5 - Grade 9 - Math,905,Music,5,32,2025,2024-2025,1
+234,12,9,230,Period 6 - Grade 9 - PE,906,Technology,6,32,2025,2024-2025,1
+235,12,9,225,Period 7 - Grade 9 - Math,907,Math,7,32,2025,2024-2025,1
+236,12,9,226,Period 8 - Grade 9 - English,908,Math,8,32,2025,2024-2025,1
+237,12,10,216,Period 1 - Grade 10 - English,1001,Music,1,32,2025,2024-2025,1
+238,12,10,223,Period 2 - Grade 10 - Music,1002,English,2,32,2025,2024-2025,1
+239,12,10,224,Period 3 - Grade 10 - PE,1003,Language Arts,3,32,2025,2024-2025,1
+240,12,10,227,Period 4 - Grade 10 - Science,1004,Social Studies,4,32,2025,2024-2025,1
+241,12,10,227,Period 5 - Grade 10 - Math,1005,PE,5,32,2025,2024-2025,1
+242,12,10,222,Period 6 - Grade 10 - English,1006,Technology,6,32,2025,2024-2025,1
+243,12,10,220,Period 7 - Grade 10 - Science,1007,Music,7,32,2025,2024-2025,1
+244,12,10,229,Period 8 - Grade 10 - English,1008,Technology,8,32,2025,2024-2025,1
+245,12,11,227,Period 1 - Grade 11 - English,1101,PE,1,32,2025,2024-2025,1
+246,12,11,217,Period 2 - Grade 11 - English,1102,Language Arts,2,32,2025,2024-2025,1
+247,12,11,219,Period 3 - Grade 11 - Social Studies,1103,PE,3,32,2025,2024-2025,1
+248,12,11,229,Period 4 - Grade 11 - Technology,1104,Social Studies,4,32,2025,2024-2025,1
+249,12,11,221,Period 5 - Grade 11 - Music,1105,PE,5,32,2025,2024-2025,1
+250,12,11,218,Period 6 - Grade 11 - Math,1106,Technology,6,32,2025,2024-2025,1
+251,12,11,223,Period 7 - Grade 11 - Social Studies,1107,Language Arts,7,32,2025,2024-2025,1
+252,12,11,221,Period 8 - Grade 11 - Social Studies,1108,Math,8,32,2025,2024-2025,1
+253,12,12,216,Period 1 - Grade 12 - English,1201,English,1,32,2025,2024-2025,1
+254,12,12,229,Period 2 - Grade 12 - Language Arts,1202,Science,2,32,2025,2024-2025,1
+255,12,12,217,Period 3 - Grade 12 - Technology,1203,English,3,32,2025,2024-2025,1
+256,12,12,227,Period 4 - Grade 12 - English,1204,PE,4,32,2025,2024-2025,1
+257,12,12,226,Period 5 - Grade 12 - Social Studies,1205,Language Arts,5,32,2025,2024-2025,1
+258,12,12,220,Period 6 - Grade 12 - PE,1206,Language Arts,6,32,2025,2024-2025,1
+259,12,12,216,Period 7 - Grade 12 - English,1207,Science,7,32,2025,2024-2025,1
+260,12,12,229,Period 8 - Grade 12 - Math,1208,PE,8,32,2025,2024-2025,1
+261,13,1,242,Grade 1 - Section 1 - Art,101,Music,1,25,2025,2024-2025,1
+262,13,1,234,Grade 1 - Section 2 - English,102,Math,2,25,2025,2024-2025,1
+263,13,1,231,Grade 1 - Section 3 - Science,103,Science,3,25,2025,2024-2025,1
+264,13,2,241,Grade 2 - Section 1 - Art,201,Language Arts,1,25,2025,2024-2025,1
+265,13,2,239,Grade 2 - Section 2 - English,202,Art,2,25,2025,2024-2025,1
+266,13,2,241,Grade 2 - Section 3 - Science,203,English,3,25,2025,2024-2025,1
+267,13,3,243,Grade 3 - Section 1 - Music,301,Language Arts,1,25,2025,2024-2025,1
+268,13,3,239,Grade 3 - Section 2 - Music,302,Language Arts,2,25,2025,2024-2025,1
+269,13,3,244,Grade 3 - Section 3 - Science,303,English,3,25,2025,2024-2025,1
+270,13,4,235,Grade 4 - Section 1 - Math,401,Science,1,25,2025,2024-2025,1
+271,13,4,234,Grade 4 - Section 2 - Music,402,Language Arts,2,25,2025,2024-2025,1
+272,13,4,245,Grade 4 - Section 3 - Science,403,Music,3,25,2025,2024-2025,1
+273,13,5,242,Grade 5 - Section 1 - Math,501,Science,1,25,2025,2024-2025,1
+274,13,5,246,Grade 5 - Section 2 - Language Arts,502,English,2,25,2025,2024-2025,1
+275,13,5,244,Grade 5 - Section 3 - Language Arts,503,Math,3,25,2025,2024-2025,1
+276,14,6,250,Period 1 - Grade 6 - PE,601,Art,1,30,2025,2024-2025,1
+277,14,6,248,Period 2 - Grade 6 - Technology,602,Social Studies,2,30,2025,2024-2025,1
+278,14,6,258,Period 3 - Grade 6 - Technology,603,Technology,3,30,2025,2024-2025,1
+279,14,6,267,Period 4 - Grade 6 - English,604,Music,4,30,2025,2024-2025,1
+280,14,6,255,Period 5 - Grade 6 - Language Arts,605,Art,5,30,2025,2024-2025,1
+281,14,6,260,Period 6 - Grade 6 - Science,606,Technology,6,30,2025,2024-2025,1
+282,14,7,267,Period 1 - Grade 7 - Math,701,Math,1,30,2025,2024-2025,1
+283,14,7,253,Period 2 - Grade 7 - Technology,702,Language Arts,2,30,2025,2024-2025,1
+284,14,7,263,Period 3 - Grade 7 - Science,703,English,3,30,2025,2024-2025,1
+285,14,7,263,Period 4 - Grade 7 - Art,704,Social Studies,4,30,2025,2024-2025,1
+286,14,7,258,Period 5 - Grade 7 - PE,705,Math,5,30,2025,2024-2025,1
+287,14,7,264,Period 6 - Grade 7 - Social Studies,706,Technology,6,30,2025,2024-2025,1
+288,14,8,260,Period 1 - Grade 8 - Music,801,Social Studies,1,30,2025,2024-2025,1
+289,14,8,250,Period 2 - Grade 8 - Language Arts,802,Language Arts,2,30,2025,2024-2025,1
+290,14,8,266,Period 3 - Grade 8 - Language Arts,803,English,3,30,2025,2024-2025,1
+291,14,8,263,Period 4 - Grade 8 - Language Arts,804,Art,4,30,2025,2024-2025,1
+292,14,8,251,Period 5 - Grade 8 - Language Arts,805,Math,5,30,2025,2024-2025,1
+293,14,8,251,Period 6 - Grade 8 - Music,806,Music,6,30,2025,2024-2025,1
+294,15,9,269,Period 1 - Grade 9 - Technology,901,Technology,1,32,2025,2024-2025,1
+295,15,9,268,Period 2 - Grade 9 - English,902,PE,2,32,2025,2024-2025,1
+296,15,9,284,Period 3 - Grade 9 - Technology,903,Social Studies,3,32,2025,2024-2025,1
+297,15,9,282,Period 4 - Grade 9 - Art,904,Art,4,32,2025,2024-2025,1
+298,15,9,269,Period 5 - Grade 9 - Social Studies,905,Language Arts,5,32,2025,2024-2025,1
+299,15,9,278,Period 6 - Grade 9 - Technology,906,Language Arts,6,32,2025,2024-2025,1
+300,15,9,279,Period 7 - Grade 9 - Language Arts,907,English,7,32,2025,2024-2025,1
+301,15,9,271,Period 8 - Grade 9 - Social Studies,908,Math,8,32,2025,2024-2025,1
+302,15,10,278,Period 1 - Grade 10 - Art,1001,PE,1,32,2025,2024-2025,1
+303,15,10,285,Period 2 - Grade 10 - Technology,1002,Art,2,32,2025,2024-2025,1
+304,15,10,271,Period 3 - Grade 10 - Math,1003,Science,3,32,2025,2024-2025,1
+305,15,10,283,Period 4 - Grade 10 - Science,1004,Music,4,32,2025,2024-2025,1
+306,15,10,271,Period 5 - Grade 10 - PE,1005,Social Studies,5,32,2025,2024-2025,1
+307,15,10,274,Period 6 - Grade 10 - English,1006,Music,6,32,2025,2024-2025,1
+308,15,10,274,Period 7 - Grade 10 - Language Arts,1007,Social Studies,7,32,2025,2024-2025,1
+309,15,10,278,Period 8 - Grade 10 - English,1008,Music,8,32,2025,2024-2025,1
+310,15,11,269,Period 1 - Grade 11 - English,1101,Language Arts,1,32,2025,2024-2025,1
+311,15,11,282,Period 2 - Grade 11 - Technology,1102,Science,2,32,2025,2024-2025,1
+312,15,11,283,Period 3 - Grade 11 - Math,1103,Technology,3,32,2025,2024-2025,1
+313,15,11,269,Period 4 - Grade 11 - Technology,1104,Music,4,32,2025,2024-2025,1
+314,15,11,286,Period 5 - Grade 11 - Language Arts,1105,Technology,5,32,2025,2024-2025,1
+315,15,11,273,Period 6 - Grade 11 - Science,1106,Science,6,32,2025,2024-2025,1
+316,15,11,271,Period 7 - Grade 11 - Music,1107,Art,7,32,2025,2024-2025,1
+317,15,11,284,Period 8 - Grade 11 - Music,1108,Music,8,32,2025,2024-2025,1
+318,15,12,287,Period 1 - Grade 12 - Social Studies,1201,PE,1,32,2025,2024-2025,1
+319,15,12,280,Period 2 - Grade 12 - Art,1202,PE,2,32,2025,2024-2025,1
+320,15,12,282,Period 3 - Grade 12 - Science,1203,Science,3,32,2025,2024-2025,1
+321,15,12,281,Period 4 - Grade 12 - Technology,1204,PE,4,32,2025,2024-2025,1
+322,15,12,285,Period 5 - Grade 12 - Art,1205,Technology,5,32,2025,2024-2025,1
+323,15,12,274,Period 6 - Grade 12 - Social Studies,1206,Social Studies,6,32,2025,2024-2025,1
+324,15,12,287,Period 7 - Grade 12 - PE,1207,Art,7,32,2025,2024-2025,1
+325,15,12,272,Period 8 - Grade 12 - Science,1208,Technology,8,32,2025,2024-2025,1
+326,16,1,305,Grade 1 - Section 1 - Art,101,English,1,25,2025,2024-2025,1
+327,16,1,312,Grade 1 - Section 2 - Art,102,Technology,2,25,2025,2024-2025,1
+328,16,1,303,Grade 1 - Section 3 - Music,103,Technology,3,25,2025,2024-2025,1
+329,16,2,297,Grade 2 - Section 1 - Music,201,Math,1,25,2025,2024-2025,1
+330,16,2,304,Grade 2 - Section 2 - English,202,Math,2,25,2025,2024-2025,1
+331,16,2,300,Grade 2 - Section 3 - Science,203,Math,3,25,2025,2024-2025,1
+332,16,3,309,Grade 3 - Section 1 - Math,301,Social Studies,1,25,2025,2024-2025,1
+333,16,3,296,Grade 3 - Section 2 - Science,302,PE,2,25,2025,2024-2025,1
+334,16,3,309,Grade 3 - Section 3 - PE,303,Science,3,25,2025,2024-2025,1
+335,16,4,314,Grade 4 - Section 1 - Math,401,PE,1,25,2025,2024-2025,1
+336,16,4,294,Grade 4 - Section 2 - Technology,402,Math,2,25,2025,2024-2025,1
+337,16,4,299,Grade 4 - Section 3 - Language Arts,403,English,3,25,2025,2024-2025,1
+338,16,5,307,Grade 5 - Section 1 - Technology,501,Social Studies,1,25,2025,2024-2025,1
+339,16,5,311,Grade 5 - Section 2 - Technology,502,Music,2,25,2025,2024-2025,1
+340,16,5,295,Grade 5 - Section 3 - Technology,503,PE,3,25,2025,2024-2025,1
+341,17,6,326,Period 1 - Grade 6 - Math,601,Music,1,30,2025,2024-2025,1
+342,17,6,321,Period 2 - Grade 6 - Music,602,Art,2,30,2025,2024-2025,1
+343,17,6,323,Period 3 - Grade 6 - Math,603,Math,3,30,2025,2024-2025,1
+344,17,6,326,Period 4 - Grade 6 - PE,604,Social Studies,4,30,2025,2024-2025,1
+345,17,6,324,Period 5 - Grade 6 - Language Arts,605,Social Studies,5,30,2025,2024-2025,1
+346,17,6,329,Period 6 - Grade 6 - Art,606,Technology,6,30,2025,2024-2025,1
+347,17,7,326,Period 1 - Grade 7 - Social Studies,701,Social Studies,1,30,2025,2024-2025,1
+348,17,7,319,Period 2 - Grade 7 - Language Arts,702,Science,2,30,2025,2024-2025,1
+349,17,7,325,Period 3 - Grade 7 - English,703,Science,3,30,2025,2024-2025,1
+350,17,7,317,Period 4 - Grade 7 - Technology,704,English,4,30,2025,2024-2025,1
+351,17,7,321,Period 5 - Grade 7 - Math,705,Music,5,30,2025,2024-2025,1
+352,17,7,319,Period 6 - Grade 7 - Technology,706,PE,6,30,2025,2024-2025,1
+353,17,8,317,Period 1 - Grade 8 - Science,801,PE,1,30,2025,2024-2025,1
+354,17,8,315,Period 2 - Grade 8 - Art,802,Language Arts,2,30,2025,2024-2025,1
+355,17,8,326,Period 3 - Grade 8 - Science,803,Math,3,30,2025,2024-2025,1
+356,17,8,317,Period 4 - Grade 8 - Art,804,Math,4,30,2025,2024-2025,1
+357,17,8,327,Period 5 - Grade 8 - PE,805,Language Arts,5,30,2025,2024-2025,1
+358,17,8,327,Period 6 - Grade 8 - Technology,806,Art,6,30,2025,2024-2025,1
+359,18,9,332,Period 1 - Grade 9 - Art,901,Technology,1,32,2025,2024-2025,1
+360,18,9,337,Period 2 - Grade 9 - Science,902,Technology,2,32,2025,2024-2025,1
+361,18,9,332,Period 3 - Grade 9 - Technology,903,Science,3,32,2025,2024-2025,1
+362,18,9,343,Period 4 - Grade 9 - Technology,904,Technology,4,32,2025,2024-2025,1
+363,18,9,342,Period 5 - Grade 9 - English,905,Art,5,32,2025,2024-2025,1
+364,18,9,337,Period 6 - Grade 9 - Social Studies,906,Art,6,32,2025,2024-2025,1
+365,18,9,340,Period 7 - Grade 9 - Art,907,PE,7,32,2025,2024-2025,1
+366,18,9,336,Period 8 - Grade 9 - Technology,908,Language Arts,8,32,2025,2024-2025,1
+367,18,10,347,Period 1 - Grade 10 - Math,1001,English,1,32,2025,2024-2025,1
+368,18,10,351,Period 2 - Grade 10 - Art,1002,Language Arts,2,32,2025,2024-2025,1
+369,18,10,337,Period 3 - Grade 10 - Social Studies,1003,Math,3,32,2025,2024-2025,1
+370,18,10,351,Period 4 - Grade 10 - Art,1004,Music,4,32,2025,2024-2025,1
+371,18,10,355,Period 5 - Grade 10 - English,1005,Music,5,32,2025,2024-2025,1
+372,18,10,338,Period 6 - Grade 10 - Technology,1006,PE,6,32,2025,2024-2025,1
+373,18,10,330,Period 7 - Grade 10 - Technology,1007,Art,7,32,2025,2024-2025,1
+374,18,10,346,Period 8 - Grade 10 - Technology,1008,Language Arts,8,32,2025,2024-2025,1
+375,18,11,345,Period 1 - Grade 11 - Math,1101,PE,1,32,2025,2024-2025,1
+376,18,11,358,Period 2 - Grade 11 - Social Studies,1102,Art,2,32,2025,2024-2025,1
+377,18,11,346,Period 3 - Grade 11 - English,1103,English,3,32,2025,2024-2025,1
+378,18,11,335,Period 4 - Grade 11 - Technology,1104,Technology,4,32,2025,2024-2025,1
+379,18,11,330,Period 5 - Grade 11 - English,1105,Social Studies,5,32,2025,2024-2025,1
+380,18,11,351,Period 6 - Grade 11 - Social Studies,1106,Music,6,32,2025,2024-2025,1
+381,18,11,356,Period 7 - Grade 11 - English,1107,Social Studies,7,32,2025,2024-2025,1
+382,18,11,347,Period 8 - Grade 11 - Music,1108,English,8,32,2025,2024-2025,1
+383,18,12,353,Period 1 - Grade 12 - Science,1201,Math,1,32,2025,2024-2025,1
+384,18,12,344,Period 2 - Grade 12 - Art,1202,Math,2,32,2025,2024-2025,1
+385,18,12,332,Period 3 - Grade 12 - English,1203,Math,3,32,2025,2024-2025,1
+386,18,12,335,Period 4 - Grade 12 - PE,1204,Technology,4,32,2025,2024-2025,1
+387,18,12,332,Period 5 - Grade 12 - Social Studies,1205,PE,5,32,2025,2024-2025,1
+388,18,12,343,Period 6 - Grade 12 - Music,1206,Language Arts,6,32,2025,2024-2025,1
+389,18,12,350,Period 7 - Grade 12 - Music,1207,Music,7,32,2025,2024-2025,1
+390,18,12,340,Period 8 - Grade 12 - Math,1208,Music,8,32,2025,2024-2025,1
+391,19,1,362,Grade 1 - Section 1 - Technology,101,Math,1,25,2025,2024-2025,1
+392,19,1,378,Grade 1 - Section 2 - English,102,Math,2,25,2025,2024-2025,1
+393,19,1,361,Grade 1 - Section 3 - Art,103,Technology,3,25,2025,2024-2025,1
+394,19,2,362,Grade 2 - Section 1 - PE,201,PE,1,25,2025,2024-2025,1
+395,19,2,378,Grade 2 - Section 2 - English,202,PE,2,25,2025,2024-2025,1
+396,19,2,373,Grade 2 - Section 3 - Music,203,Music,3,25,2025,2024-2025,1
+397,19,3,359,Grade 3 - Section 1 - Language Arts,301,Science,1,25,2025,2024-2025,1
+398,19,3,376,Grade 3 - Section 2 - Social Studies,302,Science,2,25,2025,2024-2025,1
+399,19,3,371,Grade 3 - Section 3 - Technology,303,PE,3,25,2025,2024-2025,1
+400,19,4,363,Grade 4 - Section 1 - PE,401,Art,1,25,2025,2024-2025,1
+401,19,4,359,Grade 4 - Section 2 - Technology,402,Technology,2,25,2025,2024-2025,1
+402,19,4,363,Grade 4 - Section 3 - English,403,Math,3,25,2025,2024-2025,1
+403,19,5,359,Grade 5 - Section 1 - Music,501,Technology,1,25,2025,2024-2025,1
+404,19,5,376,Grade 5 - Section 2 - English,502,PE,2,25,2025,2024-2025,1
+405,19,5,365,Grade 5 - Section 3 - Art,503,Social Studies,3,25,2025,2024-2025,1
+406,20,6,392,Period 1 - Grade 6 - Technology,601,Science,1,30,2025,2024-2025,1
+407,20,6,384,Period 2 - Grade 6 - Science,602,Social Studies,2,30,2025,2024-2025,1
+408,20,6,398,Period 3 - Grade 6 - PE,603,Social Studies,3,30,2025,2024-2025,1
+409,20,6,382,Period 4 - Grade 6 - Science,604,Math,4,30,2025,2024-2025,1
+410,20,6,406,Period 5 - Grade 6 - Technology,605,Language Arts,5,30,2025,2024-2025,1
+411,20,6,399,Period 6 - Grade 6 - Technology,606,English,6,30,2025,2024-2025,1
+412,20,7,388,Period 1 - Grade 7 - English,701,PE,1,30,2025,2024-2025,1
+413,20,7,382,Period 2 - Grade 7 - Social Studies,702,Language Arts,2,30,2025,2024-2025,1
+414,20,7,389,Period 3 - Grade 7 - Art,703,Science,3,30,2025,2024-2025,1
+415,20,7,400,Period 4 - Grade 7 - Social Studies,704,English,4,30,2025,2024-2025,1
+416,20,7,388,Period 5 - Grade 7 - English,705,Social Studies,5,30,2025,2024-2025,1
+417,20,7,389,Period 6 - Grade 7 - Language Arts,706,Language Arts,6,30,2025,2024-2025,1
+418,20,8,389,Period 1 - Grade 8 - PE,801,Science,1,30,2025,2024-2025,1
+419,20,8,397,Period 2 - Grade 8 - Art,802,Art,2,30,2025,2024-2025,1
+420,20,8,392,Period 3 - Grade 8 - Science,803,Math,3,30,2025,2024-2025,1
+421,20,8,389,Period 4 - Grade 8 - Social Studies,804,Social Studies,4,30,2025,2024-2025,1
+422,20,8,401,Period 5 - Grade 8 - Music,805,PE,5,30,2025,2024-2025,1
+423,20,8,405,Period 6 - Grade 8 - Art,806,Science,6,30,2025,2024-2025,1

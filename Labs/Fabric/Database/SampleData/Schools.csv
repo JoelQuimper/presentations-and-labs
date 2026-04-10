@@ -1,0 +1,21 @@
+SchoolID,SchoolName,SchoolDistrict,PrincipalName,Address,City,State,ZipCode,Phone,Email,SchoolType,GradesServed
+1,Grant Elementary 1,District 1 Unified School District,Ms. Davis,9754 Elm Street,Springfield,IL,62615,914-632-6574,school1@centralusd.edu,Elementary,K-5
+2,Hamilton Middle 2,District 1 Unified School District,Ms. Brown,5614 Main Street,Springfield,IL,66224,299-567-6635,school2@centralusd.edu,Middle,6-8
+3,Lee High School 3,District 1 Unified School District,Mr. Gonzalez,811 Pine Street,Smallville,IL,62045,587-280-5803,school3@centralusd.edu,High School,9-12
+4,Jackson Elementary 4,District 1 Unified School District,Prof. Garcia,9559 Oak Street,Springfield,IL,60750,877-433-5741,school4@centralusd.edu,Elementary,K-5
+5,Jefferson Middle 5,District 1 Unified School District,Ms. Johnson,6327 Elm Street,Metropolis,IL,65977,366-579-6820,school5@centralusd.edu,Middle,6-8
+6,Adams High School 6,District 1 Unified School District,Mr. Lopez,1269 Oak Street,Smallville,IL,64010,367-673-7216,school6@centralusd.edu,High School,9-12
+7,Hamilton Elementary 7,District 1 Unified School District,Prof. Brown,5413 Main Street,Shelbyville,IL,60525,523-610-5386,school7@centralusd.edu,Elementary,K-5
+8,Jefferson Middle 8,District 1 Unified School District,Ms. Martinez,5255 Oak Street,Metropolis,IL,66482,858-669-3340,school8@centralusd.edu,Middle,6-8
+9,Hamilton High School 9,District 1 Unified School District,Ms. Brown,9297 Elm Street,Smallville,IL,67019,797-608-6930,school9@centralusd.edu,High School,9-12
+10,Franklin Elementary 10,District 1 Unified School District,Ms. Rodriguez,8185 Main Street,Springfield,IL,61796,356-842-3621,school10@centralusd.edu,Elementary,K-5
+11,Maple Middle 11,District 2 Unified School District,Mrs. Martinez,1140 Pine Street,Metropolis,IL,69763,679-741-5119,school11@centralusd.edu,Middle,6-8
+12,Sherman High School 12,District 2 Unified School District,Dr. Hernandez,1976 Elm Street,Capital City,IL,61827,500-645-3591,school12@centralusd.edu,High School,9-12
+13,Hayes Elementary 13,District 2 Unified School District,Dr. Lopez,4415 Oak Street,Smallville,IL,61743,840-505-9317,school13@centralusd.edu,Elementary,K-5
+14,Lee Middle 14,District 2 Unified School District,Ms. Williams,6226 Oak Street,Smallville,IL,68689,200-813-6310,school14@centralusd.edu,Middle,6-8
+15,Garfield High School 15,District 2 Unified School District,Dr. Johnson,6047 Elm Street,Shelbyville,IL,60949,446-780-2290,school15@centralusd.edu,High School,9-12
+16,Jefferson Elementary 16,District 2 Unified School District,Mrs. Johnson,8827 Oak Street,Shelbyville,IL,67787,762-369-5342,school16@centralusd.edu,Elementary,K-5
+17,Arthur Middle 17,District 2 Unified School District,Prof. Miller,3570 Oak Street,Capital City,IL,66537,887-865-7118,school17@centralusd.edu,Middle,6-8
+18,Hayes High School 18,District 2 Unified School District,Prof. Davis,2082 Oak Street,Shelbyville,IL,61049,546-221-4770,school18@centralusd.edu,High School,9-12
+19,Grant Elementary 19,District 2 Unified School District,Ms. Smith,1263 Main Street,Shelbyville,IL,61104,232-538-2160,school19@centralusd.edu,Elementary,K-5
+20,Arthur Middle 20,District 2 Unified School District,Ms. Jones,8053 Oak Street,Smallville,IL,62167,940-784-8744,school20@centralusd.edu,Middle,6-8

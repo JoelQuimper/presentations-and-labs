@@ -1,0 +1,407 @@
+TeacherID,SchoolID,FirstName,LastName,Email,Phone,HireDate,YearsExperience,CertificationLevel,SubjectSpecialty,IsActive
+1,1,Lisa,Miller,teacher1@centralusd.edu,555-4119,2013-02-04,11,Advanced,Music,1
+2,1,James,Miller,teacher2@centralusd.edu,555-8651,2015-12-02,9,Advanced,English,1
+3,1,James,Garcia,teacher3@centralusd.edu,555-2790,2010-04-07,14,Provisional,Special Ed,1
+4,1,James,Williams,teacher4@centralusd.edu,555-5563,2012-08-08,12,Provisional,Special Ed,1
+5,1,Sarah,Smith,teacher5@centralusd.edu,555-9856,2022-01-03,2,Provisional,Science,1
+6,1,Lisa,Davis,teacher6@centralusd.edu,555-4502,2016-07-02,8,Provisional,Music,1
+7,1,James,Jones,teacher7@centralusd.edu,555-8454,2010-05-14,14,Advanced,Special Ed,1
+8,1,Jennifer,Jones,teacher8@centralusd.edu,555-4566,2012-01-19,12,Advanced,Math,1
+9,1,Emily,Smith,teacher9@centralusd.edu,555-1821,2021-10-16,3,Advanced,Science,1
+10,1,Sarah,Williams,teacher10@centralusd.edu,555-2122,2010-10-03,14,Advanced,Social Studies,1
+11,1,Sarah,Brown,teacher11@centralusd.edu,555-1651,2016-10-03,8,Standard,Art,1
+12,1,Jennifer,Garcia,teacher12@centralusd.edu,555-4910,2014-05-13,10,Provisional,PE,1
+13,1,Emily,Johnson,teacher13@centralusd.edu,555-1152,2017-08-20,7,Advanced,English,1
+14,1,Jennifer,Jones,teacher14@centralusd.edu,555-3170,2011-06-03,13,Provisional,Art,1
+15,1,Michael,Davis,teacher15@centralusd.edu,555-9900,2014-12-10,10,Advanced,Math,1
+16,1,David,Johnson,teacher16@centralusd.edu,555-3200,2020-05-04,4,Provisional,Science,1
+17,1,David,Brown,teacher17@centralusd.edu,555-6617,2014-04-22,10,Advanced,PE,1
+18,2,Lisa,Jones,teacher18@centralusd.edu,555-1832,2018-02-21,6,Standard,PE,1
+19,2,John,Garcia,teacher19@centralusd.edu,555-3143,2010-11-09,14,Provisional,Special Ed,1
+20,2,James,Smith,teacher20@centralusd.edu,555-2832,2018-02-23,6,Provisional,Math,1
+21,2,Emily,Williams,teacher21@centralusd.edu,555-8041,2023-03-02,1,Standard,Art,1
+22,2,John,Garcia,teacher22@centralusd.edu,555-4441,2022-11-08,2,Advanced,English,1
+23,2,James,Williams,teacher23@centralusd.edu,555-4878,2015-03-26,9,Provisional,Music,1
+24,2,Michael,Garcia,teacher24@centralusd.edu,555-7745,2010-11-28,14,Advanced,Social Studies,1
+25,2,Michael,Johnson,teacher25@centralusd.edu,555-7267,2014-01-28,10,Standard,Social Studies,1
+26,2,Lisa,Garcia,teacher26@centralusd.edu,555-6000,2013-04-08,11,Provisional,Social Studies,1
+27,2,Emily,Jones,teacher27@centralusd.edu,555-2137,2016-05-12,8,Advanced,Music,1
+28,2,Emily,Smith,teacher28@centralusd.edu,555-2889,2020-05-06,4,Advanced,PE,1
+29,2,Sarah,Miller,teacher29@centralusd.edu,555-6663,2010-12-26,14,Standard,Music,1
+30,2,Sarah,Miller,teacher30@centralusd.edu,555-4114,2019-05-02,5,Advanced,Music,1
+31,2,Jennifer,Garcia,teacher31@centralusd.edu,555-8066,2010-02-22,14,Standard,Art,1
+32,2,Sarah,Jones,teacher32@centralusd.edu,555-9308,2020-05-22,4,Standard,Art,1
+33,3,David,Williams,teacher33@centralusd.edu,555-4143,2016-07-22,8,Standard,Science,1
+34,3,David,Miller,teacher34@centralusd.edu,555-9977,2019-01-10,5,Standard,Social Studies,1
+35,3,Emily,Davis,teacher35@centralusd.edu,555-8238,2016-08-22,8,Provisional,Special Ed,1
+36,3,Michael,Johnson,teacher36@centralusd.edu,555-5649,2022-09-22,2,Advanced,Art,1
+37,3,Jennifer,Jones,teacher37@centralusd.edu,555-4680,2011-04-05,13,Provisional,Math,1
+38,3,Lisa,Johnson,teacher38@centralusd.edu,555-8461,2013-07-21,11,Advanced,Social Studies,1
+39,3,James,Davis,teacher39@centralusd.edu,555-7547,2021-04-05,3,Advanced,Math,1
+40,3,Sarah,Miller,teacher40@centralusd.edu,555-4585,2022-03-26,2,Advanced,Special Ed,1
+41,3,Jennifer,Johnson,teacher41@centralusd.edu,555-8478,2010-03-26,14,Standard,Art,1
+42,3,Lisa,Miller,teacher42@centralusd.edu,555-9976,2022-08-06,2,Advanced,Special Ed,1
+43,3,David,Brown,teacher43@centralusd.edu,555-5543,2017-09-16,7,Advanced,Social Studies,1
+44,3,Lisa,Johnson,teacher44@centralusd.edu,555-5681,2014-04-09,10,Standard,Art,1
+45,3,Sarah,Williams,teacher45@centralusd.edu,555-3471,2018-04-13,6,Advanced,Science,1
+46,3,Jennifer,Johnson,teacher46@centralusd.edu,555-7797,2021-07-11,3,Advanced,Special Ed,1
+47,3,John,Brown,teacher47@centralusd.edu,555-7883,2016-07-25,8,Advanced,Math,1
+48,3,James,Davis,teacher48@centralusd.edu,555-1096,2023-06-10,1,Standard,Music,1
+49,3,Jennifer,Davis,teacher49@centralusd.edu,555-4595,2018-05-14,6,Standard,Math,1
+50,3,Emily,Miller,teacher50@centralusd.edu,555-3704,2016-08-05,8,Advanced,Math,1
+51,3,John,Johnson,teacher51@centralusd.edu,555-8022,2016-03-28,8,Standard,Science,1
+52,3,David,Miller,teacher52@centralusd.edu,555-6363,2010-04-15,14,Standard,Art,1
+53,3,James,Jones,teacher53@centralusd.edu,555-7906,2022-05-27,2,Provisional,Special Ed,1
+54,3,John,Garcia,teacher54@centralusd.edu,555-4673,2010-11-03,14,Advanced,Math,1
+55,4,John,Brown,teacher55@centralusd.edu,555-4266,2022-01-20,2,Provisional,Social Studies,1
+56,4,Lisa,Johnson,teacher56@centralusd.edu,555-4571,2012-08-23,12,Standard,Art,1
+57,4,Sarah,Williams,teacher57@centralusd.edu,555-6096,2012-02-19,12,Provisional,PE,1
+58,4,James,Miller,teacher58@centralusd.edu,555-4249,2019-02-19,5,Advanced,Social Studies,1
+59,4,David,Johnson,teacher59@centralusd.edu,555-1672,2011-06-18,13,Standard,Art,1
+60,4,Emily,Smith,teacher60@centralusd.edu,555-7882,2011-08-04,13,Standard,Art,1
+61,4,Lisa,Williams,teacher61@centralusd.edu,555-8135,2020-03-24,4,Advanced,PE,1
+62,4,Lisa,Davis,teacher62@centralusd.edu,555-8136,2019-12-19,5,Standard,Art,1
+63,4,Jennifer,Johnson,teacher63@centralusd.edu,555-5569,2023-08-08,1,Standard,Music,1
+64,4,John,Davis,teacher64@centralusd.edu,555-6325,2015-03-16,9,Provisional,Art,1
+65,4,David,Garcia,teacher65@centralusd.edu,555-5581,2022-10-23,2,Standard,Math,1
+66,4,Jennifer,Johnson,teacher66@centralusd.edu,555-4954,2018-12-14,6,Standard,Social Studies,1
+67,4,Lisa,Davis,teacher67@centralusd.edu,555-8342,2021-01-03,3,Standard,Social Studies,1
+68,4,Jennifer,Jones,teacher68@centralusd.edu,555-7046,2016-08-18,8,Advanced,Art,1
+69,4,Emily,Garcia,teacher69@centralusd.edu,555-8434,2016-05-10,8,Standard,Social Studies,1
+70,4,Jennifer,Garcia,teacher70@centralusd.edu,555-2958,2011-12-18,13,Advanced,Science,1
+71,4,Jennifer,Davis,teacher71@centralusd.edu,555-5530,2013-12-19,11,Advanced,PE,1
+72,4,Jennifer,Jones,teacher72@centralusd.edu,555-4727,2011-06-06,13,Standard,Math,1
+73,4,Michael,Jones,teacher73@centralusd.edu,555-1745,2021-01-18,3,Standard,Science,1
+74,4,Lisa,Johnson,teacher74@centralusd.edu,555-1200,2020-10-10,4,Standard,Special Ed,1
+75,4,Emily,Williams,teacher75@centralusd.edu,555-1841,2017-05-28,7,Standard,English,1
+76,5,Sarah,Miller,teacher76@centralusd.edu,555-9056,2023-02-19,1,Advanced,Math,1
+77,5,Michael,Jones,teacher77@centralusd.edu,555-2395,2012-04-04,12,Advanced,Music,1
+78,5,Jennifer,Miller,teacher78@centralusd.edu,555-8381,2019-08-10,5,Advanced,Music,1
+79,5,John,Johnson,teacher79@centralusd.edu,555-4404,2014-11-07,10,Standard,English,1
+80,5,Jennifer,Williams,teacher80@centralusd.edu,555-2229,2012-03-01,12,Standard,Special Ed,1
+81,5,Lisa,Jones,teacher81@centralusd.edu,555-1534,2021-04-10,3,Advanced,PE,1
+82,5,Lisa,Johnson,teacher82@centralusd.edu,555-4824,2021-05-26,3,Advanced,Social Studies,1
+83,5,Sarah,Brown,teacher83@centralusd.edu,555-3441,2016-05-27,8,Provisional,English,1
+84,5,Michael,Jones,teacher84@centralusd.edu,555-5728,2010-08-04,14,Standard,PE,1
+85,5,James,Jones,teacher85@centralusd.edu,555-9199,2021-09-16,3,Standard,English,1
+86,5,John,Miller,teacher86@centralusd.edu,555-6280,2019-10-09,5,Provisional,English,1
+87,5,John,Jones,teacher87@centralusd.edu,555-1659,2013-03-16,11,Advanced,Special Ed,1
+88,5,Michael,Miller,teacher88@centralusd.edu,555-9056,2014-02-16,10,Standard,Music,1
+89,5,Emily,Johnson,teacher89@centralusd.edu,555-3634,2015-06-14,9,Advanced,Special Ed,1
+90,5,James,Smith,teacher90@centralusd.edu,555-8451,2014-02-11,10,Standard,Art,1
+91,5,James,Smith,teacher91@centralusd.edu,555-9889,2011-08-14,13,Provisional,Social Studies,1
+92,5,Emily,Davis,teacher92@centralusd.edu,555-8242,2018-01-07,6,Standard,Science,1
+93,5,Lisa,Davis,teacher93@centralusd.edu,555-2989,2014-01-21,10,Advanced,Social Studies,1
+94,5,Michael,Jones,teacher94@centralusd.edu,555-1224,2021-09-14,3,Provisional,Social Studies,1
+95,5,Sarah,Davis,teacher95@centralusd.edu,555-2924,2023-11-27,1,Provisional,Special Ed,1
+96,6,David,Jones,teacher96@centralusd.edu,555-7807,2021-08-16,3,Provisional,Special Ed,1
+97,6,Michael,Miller,teacher97@centralusd.edu,555-4122,2018-10-17,6,Advanced,Science,1
+98,6,Sarah,Jones,teacher98@centralusd.edu,555-7798,2023-06-26,1,Advanced,PE,1
+99,6,John,Jones,teacher99@centralusd.edu,555-5891,2023-10-19,1,Advanced,Special Ed,1
+100,6,Michael,Davis,teacher100@centralusd.edu,555-9824,2023-08-12,1,Standard,Music,1
+101,6,Emily,Brown,teacher101@centralusd.edu,555-4912,2017-10-13,7,Provisional,Music,1
+102,6,Emily,Davis,teacher102@centralusd.edu,555-7246,2010-07-22,14,Advanced,Science,1
+103,6,John,Williams,teacher103@centralusd.edu,555-9229,2017-10-11,7,Provisional,Special Ed,1
+104,6,Lisa,Smith,teacher104@centralusd.edu,555-3361,2011-07-28,13,Advanced,Science,1
+105,6,Lisa,Jones,teacher105@centralusd.edu,555-6546,2011-10-23,13,Standard,English,1
+106,6,Emily,Miller,teacher106@centralusd.edu,555-6188,2023-11-23,1,Standard,Math,1
+107,6,Sarah,Brown,teacher107@centralusd.edu,555-5708,2019-04-24,5,Provisional,Music,1
+108,6,Sarah,Davis,teacher108@centralusd.edu,555-3725,2011-12-10,13,Provisional,Math,1
+109,6,John,Jones,teacher109@centralusd.edu,555-6873,2015-06-14,9,Provisional,Social Studies,1
+110,6,James,Williams,teacher110@centralusd.edu,555-3785,2018-03-03,6,Advanced,Music,1
+111,6,Jennifer,Davis,teacher111@centralusd.edu,555-3344,2019-04-15,5,Advanced,PE,1
+112,6,David,Smith,teacher112@centralusd.edu,555-8622,2017-05-22,7,Advanced,Science,1
+113,6,Lisa,Garcia,teacher113@centralusd.edu,555-5901,2011-11-14,13,Advanced,PE,1
+114,7,David,Brown,teacher114@centralusd.edu,555-7302,2017-08-04,7,Provisional,Music,1
+115,7,Emily,Jones,teacher115@centralusd.edu,555-5837,2019-01-27,5,Advanced,Music,1
+116,7,John,Smith,teacher116@centralusd.edu,555-9138,2014-05-25,10,Provisional,Art,1
+117,7,Jennifer,Jones,teacher117@centralusd.edu,555-3240,2013-11-04,11,Advanced,Math,1
+118,7,Lisa,Smith,teacher118@centralusd.edu,555-6977,2014-12-05,10,Provisional,PE,1
+119,7,James,Williams,teacher119@centralusd.edu,555-4289,2015-03-26,9,Advanced,Art,1
+120,7,David,Williams,teacher120@centralusd.edu,555-5210,2018-08-26,6,Standard,Art,1
+121,7,Sarah,Davis,teacher121@centralusd.edu,555-2233,2022-03-25,2,Provisional,Music,1
+122,7,Emily,Johnson,teacher122@centralusd.edu,555-7464,2023-01-09,1,Advanced,English,1
+123,7,Emily,Jones,teacher123@centralusd.edu,555-7242,2017-11-12,7,Provisional,Social Studies,1
+124,7,John,Garcia,teacher124@centralusd.edu,555-4626,2017-11-03,7,Advanced,Special Ed,1
+125,7,David,Miller,teacher125@centralusd.edu,555-2911,2021-03-02,3,Provisional,PE,1
+126,7,Sarah,Johnson,teacher126@centralusd.edu,555-4846,2017-09-05,7,Standard,Special Ed,1
+127,7,James,Williams,teacher127@centralusd.edu,555-7797,2015-11-04,9,Standard,Music,1
+128,7,John,Garcia,teacher128@centralusd.edu,555-4559,2014-08-15,10,Provisional,Art,1
+129,7,Emily,Garcia,teacher129@centralusd.edu,555-1992,2011-07-09,13,Provisional,English,1
+130,7,Lisa,Johnson,teacher130@centralusd.edu,555-4475,2023-11-21,1,Advanced,Math,1
+131,8,Emily,Brown,teacher131@centralusd.edu,555-3063,2010-10-07,14,Provisional,Social Studies,1
+132,8,Jennifer,Brown,teacher132@centralusd.edu,555-6383,2019-03-26,5,Advanced,Math,1
+133,8,Michael,Williams,teacher133@centralusd.edu,555-9850,2014-05-26,10,Provisional,English,1
+134,8,John,Williams,teacher134@centralusd.edu,555-1243,2020-06-26,4,Provisional,Art,1
+135,8,Michael,Jones,teacher135@centralusd.edu,555-1858,2010-03-24,14,Standard,English,1
+136,8,Sarah,Davis,teacher136@centralusd.edu,555-8344,2021-06-17,3,Advanced,English,1
+137,8,Jennifer,Smith,teacher137@centralusd.edu,555-9543,2017-05-15,7,Advanced,Math,1
+138,8,Lisa,Miller,teacher138@centralusd.edu,555-7984,2010-11-04,14,Standard,Special Ed,1
+139,8,Sarah,Garcia,teacher139@centralusd.edu,555-3430,2011-02-05,13,Standard,Art,1
+140,8,David,Davis,teacher140@centralusd.edu,555-9282,2016-10-14,8,Provisional,English,1
+141,8,Jennifer,Miller,teacher141@centralusd.edu,555-8398,2023-04-14,1,Standard,Special Ed,1
+142,8,James,Johnson,teacher142@centralusd.edu,555-6120,2016-07-11,8,Advanced,PE,1
+143,8,Michael,Davis,teacher143@centralusd.edu,555-2099,2015-02-27,9,Provisional,English,1
+144,8,Sarah,Garcia,teacher144@centralusd.edu,555-3131,2016-09-02,8,Advanced,Art,1
+145,8,Sarah,Miller,teacher145@centralusd.edu,555-6793,2020-11-25,4,Standard,Math,1
+146,8,David,Garcia,teacher146@centralusd.edu,555-2697,2014-10-17,10,Provisional,Science,1
+147,8,Lisa,Brown,teacher147@centralusd.edu,555-2773,2020-06-28,4,Advanced,Art,1
+148,8,David,Brown,teacher148@centralusd.edu,555-8030,2011-09-25,13,Advanced,Math,1
+149,8,David,Smith,teacher149@centralusd.edu,555-3955,2019-05-23,5,Standard,Art,1
+150,8,John,Williams,teacher150@centralusd.edu,555-3347,2015-10-22,9,Standard,English,1
+151,8,John,Johnson,teacher151@centralusd.edu,555-9691,2012-04-13,12,Standard,Special Ed,1
+152,8,Michael,Garcia,teacher152@centralusd.edu,555-6105,2015-12-11,9,Advanced,English,1
+153,8,Michael,Williams,teacher153@centralusd.edu,555-1815,2010-11-03,14,Standard,Special Ed,1
+154,8,James,Davis,teacher154@centralusd.edu,555-8242,2020-07-09,4,Provisional,English,1
+155,8,James,Johnson,teacher155@centralusd.edu,555-5640,2015-11-22,9,Advanced,Special Ed,1
+156,8,David,Smith,teacher156@centralusd.edu,555-4612,2018-07-20,6,Provisional,Math,1
+157,8,David,Brown,teacher157@centralusd.edu,555-3248,2013-05-10,11,Standard,English,1
+158,8,Lisa,Miller,teacher158@centralusd.edu,555-3878,2010-03-13,14,Advanced,Social Studies,1
+159,9,Emily,Johnson,teacher159@centralusd.edu,555-7505,2018-12-02,6,Standard,Math,1
+160,9,Sarah,Garcia,teacher160@centralusd.edu,555-8033,2017-10-13,7,Advanced,Music,1
+161,9,Sarah,Miller,teacher161@centralusd.edu,555-1341,2014-06-06,10,Advanced,Special Ed,1
+162,9,Emily,Johnson,teacher162@centralusd.edu,555-8155,2023-02-08,1,Standard,Music,1
+163,9,Sarah,Miller,teacher163@centralusd.edu,555-6083,2018-12-11,6,Provisional,Art,1
+164,9,Michael,Johnson,teacher164@centralusd.edu,555-9363,2022-11-04,2,Advanced,Social Studies,1
+165,9,Emily,Garcia,teacher165@centralusd.edu,555-3419,2022-04-04,2,Provisional,PE,1
+166,9,Michael,Williams,teacher166@centralusd.edu,555-2234,2013-03-25,11,Advanced,Special Ed,1
+167,9,Lisa,Garcia,teacher167@centralusd.edu,555-6179,2017-03-15,7,Provisional,Special Ed,1
+168,9,David,Jones,teacher168@centralusd.edu,555-1920,2017-06-17,7,Provisional,PE,1
+169,9,Lisa,Smith,teacher169@centralusd.edu,555-1932,2017-06-27,7,Standard,English,1
+170,9,Sarah,Miller,teacher170@centralusd.edu,555-8581,2020-10-18,4,Advanced,Math,1
+171,9,Jennifer,Garcia,teacher171@centralusd.edu,555-8792,2017-09-05,7,Provisional,Special Ed,1
+172,9,Emily,Johnson,teacher172@centralusd.edu,555-9266,2011-11-06,13,Provisional,Social Studies,1
+173,9,Lisa,Davis,teacher173@centralusd.edu,555-9586,2021-09-20,3,Provisional,Art,1
+174,9,David,Miller,teacher174@centralusd.edu,555-7697,2015-06-22,9,Advanced,Math,1
+175,9,Emily,Johnson,teacher175@centralusd.edu,555-6401,2022-02-18,2,Advanced,Music,1
+176,10,David,Williams,teacher176@centralusd.edu,555-6461,2014-02-19,10,Advanced,Science,1
+177,10,David,Miller,teacher177@centralusd.edu,555-3112,2015-10-23,9,Provisional,PE,1
+178,10,James,Garcia,teacher178@centralusd.edu,555-3093,2018-11-23,6,Advanced,English,1
+179,10,James,Garcia,teacher179@centralusd.edu,555-1298,2020-06-10,4,Provisional,Social Studies,1
+180,10,Lisa,Brown,teacher180@centralusd.edu,555-4711,2015-03-05,9,Provisional,PE,1
+181,10,Sarah,Smith,teacher181@centralusd.edu,555-6517,2023-10-05,1,Advanced,Music,1
+182,10,Michael,Williams,teacher182@centralusd.edu,555-3712,2012-12-15,12,Provisional,Music,1
+183,10,Jennifer,Davis,teacher183@centralusd.edu,555-5668,2015-12-26,9,Standard,Social Studies,1
+184,10,Jennifer,Jones,teacher184@centralusd.edu,555-8684,2018-04-12,6,Advanced,Special Ed,1
+185,10,David,Miller,teacher185@centralusd.edu,555-9239,2017-09-14,7,Provisional,Social Studies,1
+186,10,Michael,Jones,teacher186@centralusd.edu,555-1854,2022-11-16,2,Standard,English,1
+187,10,Sarah,Jones,teacher187@centralusd.edu,555-2374,2021-03-09,3,Standard,Science,1
+188,10,James,Johnson,teacher188@centralusd.edu,555-4637,2023-08-12,1,Provisional,Music,1
+189,10,James,Garcia,teacher189@centralusd.edu,555-4862,2010-07-03,14,Standard,Social Studies,1
+190,10,Emily,Johnson,teacher190@centralusd.edu,555-6493,2010-03-05,14,Provisional,PE,1
+191,10,Lisa,Williams,teacher191@centralusd.edu,555-8685,2023-08-20,1,Provisional,English,1
+192,10,David,Brown,teacher192@centralusd.edu,555-3449,2010-09-24,14,Advanced,Music,1
+193,10,David,Brown,teacher193@centralusd.edu,555-5934,2011-02-02,13,Provisional,Music,1
+194,10,Lisa,Johnson,teacher194@centralusd.edu,555-2816,2020-08-20,4,Advanced,Math,1
+195,10,Jennifer,Williams,teacher195@centralusd.edu,555-5772,2020-07-01,4,Advanced,Art,1
+196,10,James,Williams,teacher196@centralusd.edu,555-2402,2013-09-12,11,Provisional,Math,1
+197,10,Lisa,Smith,teacher197@centralusd.edu,555-7338,2016-06-09,8,Advanced,Math,1
+198,10,Sarah,Garcia,teacher198@centralusd.edu,555-4950,2015-12-22,9,Advanced,English,1
+199,10,Emily,Williams,teacher199@centralusd.edu,555-1726,2022-06-18,2,Standard,Science,1
+200,10,Lisa,Davis,teacher200@centralusd.edu,555-3986,2023-03-03,1,Advanced,Special Ed,1
+201,11,David,Brown,teacher201@centralusd.edu,555-1717,2010-04-02,14,Standard,PE,1
+202,11,James,Davis,teacher202@centralusd.edu,555-5150,2018-01-25,6,Advanced,Social Studies,1
+203,11,Emily,Smith,teacher203@centralusd.edu,555-6438,2014-05-04,10,Standard,Music,1
+204,11,Lisa,Miller,teacher204@centralusd.edu,555-6554,2016-03-16,8,Advanced,Special Ed,1
+205,11,David,Johnson,teacher205@centralusd.edu,555-7955,2015-02-14,9,Advanced,Science,1
+206,11,David,Garcia,teacher206@centralusd.edu,555-2680,2018-02-11,6,Advanced,PE,1
+207,11,Lisa,Miller,teacher207@centralusd.edu,555-3730,2014-12-15,10,Standard,Special Ed,1
+208,11,Emily,Miller,teacher208@centralusd.edu,555-5498,2010-11-26,14,Provisional,English,1
+209,11,James,Garcia,teacher209@centralusd.edu,555-9406,2020-12-22,4,Provisional,Math,1
+210,11,Lisa,Smith,teacher210@centralusd.edu,555-3068,2012-02-08,12,Advanced,Art,1
+211,11,James,Smith,teacher211@centralusd.edu,555-3513,2015-11-15,9,Standard,Art,1
+212,11,Sarah,Williams,teacher212@centralusd.edu,555-9674,2017-06-13,7,Standard,PE,1
+213,11,Sarah,Smith,teacher213@centralusd.edu,555-4048,2013-08-17,11,Standard,English,1
+214,11,David,Davis,teacher214@centralusd.edu,555-4515,2014-10-10,10,Advanced,Special Ed,1
+215,11,Sarah,Williams,teacher215@centralusd.edu,555-2213,2013-08-06,11,Advanced,Special Ed,1
+216,12,Emily,Garcia,teacher216@centralusd.edu,555-2063,2011-09-18,13,Standard,PE,1
+217,12,Michael,Williams,teacher217@centralusd.edu,555-6922,2023-09-08,1,Provisional,Social Studies,1
+218,12,Michael,Brown,teacher218@centralusd.edu,555-9094,2022-01-12,2,Advanced,Art,1
+219,12,Michael,Johnson,teacher219@centralusd.edu,555-2077,2017-05-13,7,Advanced,Special Ed,1
+220,12,James,Miller,teacher220@centralusd.edu,555-2208,2018-03-11,6,Advanced,English,1
+221,12,Lisa,Garcia,teacher221@centralusd.edu,555-3102,2017-09-21,7,Advanced,Science,1
+222,12,Michael,Miller,teacher222@centralusd.edu,555-9238,2022-01-27,2,Provisional,Science,1
+223,12,Michael,Williams,teacher223@centralusd.edu,555-6286,2014-12-08,10,Standard,PE,1
+224,12,Sarah,Jones,teacher224@centralusd.edu,555-4216,2023-11-18,1,Standard,Science,1
+225,12,David,Johnson,teacher225@centralusd.edu,555-9234,2020-11-06,4,Advanced,Science,1
+226,12,Emily,Smith,teacher226@centralusd.edu,555-1464,2012-02-02,12,Advanced,PE,1
+227,12,Jennifer,Miller,teacher227@centralusd.edu,555-1496,2020-08-21,4,Advanced,PE,1
+228,12,David,Davis,teacher228@centralusd.edu,555-5012,2020-11-13,4,Standard,Special Ed,1
+229,12,John,Williams,teacher229@centralusd.edu,555-8202,2011-07-16,13,Standard,Social Studies,1
+230,12,Michael,Garcia,teacher230@centralusd.edu,555-6231,2015-12-28,9,Standard,Music,1
+231,13,Emily,Johnson,teacher231@centralusd.edu,555-6228,2012-04-15,12,Provisional,PE,1
+232,13,Jennifer,Williams,teacher232@centralusd.edu,555-2586,2017-01-10,7,Standard,Music,1
+233,13,Michael,Garcia,teacher233@centralusd.edu,555-6123,2013-04-25,11,Provisional,Special Ed,1
+234,13,Lisa,Davis,teacher234@centralusd.edu,555-6055,2018-08-01,6,Provisional,Music,1
+235,13,Lisa,Brown,teacher235@centralusd.edu,555-4524,2018-10-12,6,Provisional,Math,1
+236,13,Lisa,Davis,teacher236@centralusd.edu,555-5681,2014-09-01,10,Provisional,Music,1
+237,13,David,Garcia,teacher237@centralusd.edu,555-7606,2012-06-02,12,Standard,Math,1
+238,13,Jennifer,Garcia,teacher238@centralusd.edu,555-5728,2019-02-13,5,Advanced,Special Ed,1
+239,13,David,Johnson,teacher239@centralusd.edu,555-3108,2022-02-13,2,Standard,Art,1
+240,13,Emily,Williams,teacher240@centralusd.edu,555-4261,2018-10-17,6,Standard,Math,1
+241,13,John,Williams,teacher241@centralusd.edu,555-6456,2010-08-17,14,Standard,Science,1
+242,13,Michael,Garcia,teacher242@centralusd.edu,555-6218,2019-03-13,5,Advanced,PE,1
+243,13,Emily,Davis,teacher243@centralusd.edu,555-5911,2019-08-27,5,Provisional,Art,1
+244,13,Sarah,Miller,teacher244@centralusd.edu,555-6040,2015-12-28,9,Advanced,Math,1
+245,13,Lisa,Jones,teacher245@centralusd.edu,555-4728,2019-12-02,5,Advanced,Special Ed,1
+246,13,James,Williams,teacher246@centralusd.edu,555-4968,2012-01-19,12,Advanced,English,1
+247,13,John,Davis,teacher247@centralusd.edu,555-6139,2013-07-05,11,Standard,Social Studies,1
+248,14,Lisa,Smith,teacher248@centralusd.edu,555-3262,2016-09-07,8,Advanced,Art,1
+249,14,Lisa,Miller,teacher249@centralusd.edu,555-6140,2020-03-15,4,Advanced,Art,1
+250,14,Emily,Jones,teacher250@centralusd.edu,555-8932,2018-04-08,6,Standard,PE,1
+251,14,David,Jones,teacher251@centralusd.edu,555-4396,2013-12-23,11,Standard,Art,1
+252,14,Emily,Jones,teacher252@centralusd.edu,555-5715,2017-02-19,7,Advanced,Music,1
+253,14,Emily,Williams,teacher253@centralusd.edu,555-5758,2016-01-10,8,Advanced,English,1
+254,14,Lisa,Jones,teacher254@centralusd.edu,555-8849,2015-04-07,9,Advanced,PE,1
+255,14,David,Williams,teacher255@centralusd.edu,555-2789,2018-10-24,6,Advanced,Social Studies,1
+256,14,John,Brown,teacher256@centralusd.edu,555-4814,2013-01-04,11,Standard,Art,1
+257,14,Lisa,Johnson,teacher257@centralusd.edu,555-3252,2021-01-18,3,Provisional,Music,1
+258,14,Lisa,Davis,teacher258@centralusd.edu,555-4267,2020-05-11,4,Standard,Math,1
+259,14,Sarah,Brown,teacher259@centralusd.edu,555-9767,2022-12-24,2,Provisional,Science,1
+260,14,Michael,Smith,teacher260@centralusd.edu,555-7504,2016-08-06,8,Advanced,PE,1
+261,14,John,Jones,teacher261@centralusd.edu,555-2758,2010-06-10,14,Standard,Special Ed,1
+262,14,Lisa,Jones,teacher262@centralusd.edu,555-4159,2012-02-11,12,Provisional,Special Ed,1
+263,14,David,Williams,teacher263@centralusd.edu,555-1230,2020-12-11,4,Standard,Social Studies,1
+264,14,James,Miller,teacher264@centralusd.edu,555-9442,2012-06-03,12,Standard,English,1
+265,14,Michael,Davis,teacher265@centralusd.edu,555-6301,2012-04-01,12,Standard,Music,1
+266,14,Lisa,Jones,teacher266@centralusd.edu,555-6400,2013-05-19,11,Advanced,Math,1
+267,14,Emily,Brown,teacher267@centralusd.edu,555-2017,2014-11-04,10,Standard,PE,1
+268,15,James,Jones,teacher268@centralusd.edu,555-2923,2012-11-10,12,Standard,Social Studies,1
+269,15,Michael,Davis,teacher269@centralusd.edu,555-3509,2013-08-24,11,Advanced,Art,1
+270,15,Lisa,Brown,teacher270@centralusd.edu,555-5054,2016-11-25,8,Advanced,English,1
+271,15,Lisa,Garcia,teacher271@centralusd.edu,555-2279,2018-10-04,6,Provisional,Social Studies,1
+272,15,Michael,Williams,teacher272@centralusd.edu,555-6375,2019-09-15,5,Provisional,Social Studies,1
+273,15,Lisa,Johnson,teacher273@centralusd.edu,555-9361,2021-08-26,3,Provisional,Special Ed,1
+274,15,James,Davis,teacher274@centralusd.edu,555-1945,2012-09-15,12,Advanced,PE,1
+275,15,John,Miller,teacher275@centralusd.edu,555-5169,2021-01-24,3,Provisional,English,1
+276,15,James,Garcia,teacher276@centralusd.edu,555-2044,2010-09-02,14,Provisional,Special Ed,1
+277,15,David,Miller,teacher277@centralusd.edu,555-3948,2010-03-25,14,Advanced,Music,1
+278,15,James,Davis,teacher278@centralusd.edu,555-7184,2015-07-03,9,Advanced,Science,1
+279,15,Emily,Johnson,teacher279@centralusd.edu,555-3924,2020-09-13,4,Advanced,Science,1
+280,15,Jennifer,Smith,teacher280@centralusd.edu,555-1372,2021-05-15,3,Advanced,Music,1
+281,15,James,Brown,teacher281@centralusd.edu,555-5055,2018-08-12,6,Provisional,PE,1
+282,15,Sarah,Smith,teacher282@centralusd.edu,555-7868,2013-10-25,11,Provisional,Social Studies,1
+283,15,Sarah,Johnson,teacher283@centralusd.edu,555-1550,2013-08-20,11,Advanced,Math,1
+284,15,John,Miller,teacher284@centralusd.edu,555-8191,2013-04-18,11,Provisional,Math,1
+285,15,David,Brown,teacher285@centralusd.edu,555-6224,2012-10-20,12,Advanced,Art,1
+286,15,David,Williams,teacher286@centralusd.edu,555-9540,2013-04-14,11,Standard,PE,1
+287,15,Michael,Miller,teacher287@centralusd.edu,555-9120,2010-01-12,14,Advanced,Music,1
+288,16,Emily,Miller,teacher288@centralusd.edu,555-7688,2022-03-10,2,Standard,Science,1
+289,16,Lisa,Brown,teacher289@centralusd.edu,555-4692,2022-05-28,2,Advanced,Science,1
+290,16,Lisa,Smith,teacher290@centralusd.edu,555-7761,2022-07-18,2,Advanced,Science,1
+291,16,Jennifer,Jones,teacher291@centralusd.edu,555-4331,2016-06-21,8,Provisional,Special Ed,1
+292,16,Emily,Johnson,teacher292@centralusd.edu,555-9775,2023-12-27,1,Provisional,Math,1
+293,16,James,Smith,teacher293@centralusd.edu,555-2192,2014-04-26,10,Advanced,Social Studies,1
+294,16,Jennifer,Garcia,teacher294@centralusd.edu,555-5967,2017-01-07,7,Provisional,English,1
+295,16,Lisa,Brown,teacher295@centralusd.edu,555-4350,2021-07-08,3,Advanced,Art,1
+296,16,David,Miller,teacher296@centralusd.edu,555-8639,2022-09-21,2,Standard,PE,1
+297,16,Emily,Davis,teacher297@centralusd.edu,555-8635,2014-02-26,10,Advanced,Special Ed,1
+298,16,Emily,Brown,teacher298@centralusd.edu,555-7073,2022-06-14,2,Provisional,Social Studies,1
+299,16,Michael,Smith,teacher299@centralusd.edu,555-5272,2021-09-19,3,Advanced,Music,1
+300,16,Michael,Brown,teacher300@centralusd.edu,555-6404,2014-04-13,10,Advanced,Social Studies,1
+301,16,Emily,Jones,teacher301@centralusd.edu,555-9005,2017-12-21,7,Advanced,Special Ed,1
+302,16,Michael,Garcia,teacher302@centralusd.edu,555-3773,2017-03-24,7,Advanced,Special Ed,1
+303,16,John,Smith,teacher303@centralusd.edu,555-2217,2012-11-02,12,Provisional,Music,1
+304,16,Jennifer,Johnson,teacher304@centralusd.edu,555-3474,2012-01-07,12,Advanced,Special Ed,1
+305,16,John,Davis,teacher305@centralusd.edu,555-8993,2015-01-01,9,Advanced,Music,1
+306,16,John,Jones,teacher306@centralusd.edu,555-9777,2010-05-01,14,Advanced,Music,1
+307,16,Michael,Johnson,teacher307@centralusd.edu,555-2578,2022-09-05,2,Provisional,Social Studies,1
+308,16,David,Garcia,teacher308@centralusd.edu,555-5379,2019-07-03,5,Standard,Music,1
+309,16,Jennifer,Brown,teacher309@centralusd.edu,555-5914,2017-11-27,7,Provisional,Math,1
+310,16,James,Miller,teacher310@centralusd.edu,555-7179,2011-09-16,13,Provisional,Math,1
+311,16,Michael,Johnson,teacher311@centralusd.edu,555-9189,2021-07-21,3,Standard,English,1
+312,16,John,Brown,teacher312@centralusd.edu,555-4463,2018-12-19,6,Standard,PE,1
+313,16,Sarah,Jones,teacher313@centralusd.edu,555-9897,2010-10-22,14,Provisional,Science,1
+314,16,Emily,Smith,teacher314@centralusd.edu,555-4394,2023-10-05,1,Advanced,Music,1
+315,17,David,Williams,teacher315@centralusd.edu,555-4939,2011-10-27,13,Standard,Art,1
+316,17,Michael,Johnson,teacher316@centralusd.edu,555-9204,2016-12-12,8,Provisional,English,1
+317,17,Jennifer,Johnson,teacher317@centralusd.edu,555-6580,2016-10-25,8,Advanced,Music,1
+318,17,Emily,Smith,teacher318@centralusd.edu,555-5478,2022-08-16,2,Provisional,Art,1
+319,17,James,Miller,teacher319@centralusd.edu,555-4043,2018-11-19,6,Advanced,Music,1
+320,17,David,Brown,teacher320@centralusd.edu,555-2204,2011-02-09,13,Provisional,Music,1
+321,17,Michael,Miller,teacher321@centralusd.edu,555-6188,2021-06-04,3,Provisional,Math,1
+322,17,Lisa,Garcia,teacher322@centralusd.edu,555-5419,2014-02-05,10,Provisional,Science,1
+323,17,Lisa,Miller,teacher323@centralusd.edu,555-2692,2016-01-03,8,Standard,English,1
+324,17,Emily,Miller,teacher324@centralusd.edu,555-1202,2019-05-14,5,Standard,English,1
+325,17,Jennifer,Williams,teacher325@centralusd.edu,555-7237,2021-03-05,3,Standard,PE,1
+326,17,Lisa,Williams,teacher326@centralusd.edu,555-2036,2014-03-14,10,Standard,Music,1
+327,17,Lisa,Johnson,teacher327@centralusd.edu,555-6916,2014-05-08,10,Advanced,Special Ed,1
+328,17,Jennifer,Davis,teacher328@centralusd.edu,555-2752,2019-03-10,5,Provisional,Music,1
+329,17,James,Garcia,teacher329@centralusd.edu,555-8212,2015-06-14,9,Advanced,Science,1
+330,18,Emily,Brown,teacher330@centralusd.edu,555-8848,2014-06-06,10,Standard,Art,1
+331,18,Lisa,Brown,teacher331@centralusd.edu,555-6339,2014-07-09,10,Standard,Art,1
+332,18,Jennifer,Williams,teacher332@centralusd.edu,555-1440,2011-12-15,13,Advanced,Social Studies,1
+333,18,David,Johnson,teacher333@centralusd.edu,555-7703,2017-11-16,7,Provisional,PE,1
+334,18,David,Williams,teacher334@centralusd.edu,555-7932,2013-07-03,11,Standard,Special Ed,1
+335,18,James,Miller,teacher335@centralusd.edu,555-9907,2019-01-26,5,Standard,English,1
+336,18,Jennifer,Garcia,teacher336@centralusd.edu,555-3725,2011-11-20,13,Provisional,Music,1
+337,18,Emily,Miller,teacher337@centralusd.edu,555-2735,2022-01-04,2,Standard,Social Studies,1
+338,18,Jennifer,Davis,teacher338@centralusd.edu,555-7129,2018-07-15,6,Advanced,Science,1
+339,18,John,Davis,teacher339@centralusd.edu,555-2712,2015-05-14,9,Provisional,English,1
+340,18,Michael,Garcia,teacher340@centralusd.edu,555-6110,2023-06-15,1,Provisional,Special Ed,1
+341,18,Lisa,Johnson,teacher341@centralusd.edu,555-8178,2015-12-23,9,Standard,Art,1
+342,18,David,Smith,teacher342@centralusd.edu,555-2885,2011-01-28,13,Standard,English,1
+343,18,Michael,Brown,teacher343@centralusd.edu,555-9454,2020-03-18,4,Provisional,Art,1
+344,18,James,Davis,teacher344@centralusd.edu,555-4798,2018-07-21,6,Provisional,Science,1
+345,18,James,Miller,teacher345@centralusd.edu,555-1478,2020-12-20,4,Provisional,Special Ed,1
+346,18,James,Miller,teacher346@centralusd.edu,555-1072,2019-12-07,5,Provisional,PE,1
+347,18,Sarah,Johnson,teacher347@centralusd.edu,555-9796,2022-03-12,2,Standard,Social Studies,1
+348,18,Sarah,Jones,teacher348@centralusd.edu,555-9019,2017-09-21,7,Standard,Music,1
+349,18,James,Johnson,teacher349@centralusd.edu,555-6700,2019-06-28,5,Standard,Science,1
+350,18,David,Johnson,teacher350@centralusd.edu,555-3194,2023-06-04,1,Provisional,PE,1
+351,18,Michael,Garcia,teacher351@centralusd.edu,555-3316,2011-09-13,13,Standard,Science,1
+352,18,James,Miller,teacher352@centralusd.edu,555-4043,2019-08-21,5,Advanced,Science,1
+353,18,Michael,Davis,teacher353@centralusd.edu,555-5732,2018-03-06,6,Standard,Special Ed,1
+354,18,John,Garcia,teacher354@centralusd.edu,555-1157,2019-08-05,5,Provisional,Music,1
+355,18,Lisa,Miller,teacher355@centralusd.edu,555-9056,2018-07-23,6,Standard,Special Ed,1
+356,18,Sarah,Smith,teacher356@centralusd.edu,555-4613,2012-05-02,12,Standard,Social Studies,1
+357,18,David,Williams,teacher357@centralusd.edu,555-8492,2018-10-24,6,Standard,English,1
+358,18,Sarah,Jones,teacher358@centralusd.edu,555-9898,2019-06-18,5,Provisional,Special Ed,1
+359,19,Jennifer,Miller,teacher359@centralusd.edu,555-2677,2018-12-27,6,Advanced,Social Studies,1
+360,19,John,Davis,teacher360@centralusd.edu,555-5305,2014-06-28,10,Provisional,Special Ed,1
+361,19,Sarah,Brown,teacher361@centralusd.edu,555-4438,2023-12-19,1,Advanced,Art,1
+362,19,James,Williams,teacher362@centralusd.edu,555-3281,2023-04-27,1,Provisional,Math,1
+363,19,Emily,Jones,teacher363@centralusd.edu,555-9827,2019-03-11,5,Advanced,PE,1
+364,19,David,Johnson,teacher364@centralusd.edu,555-3221,2014-07-02,10,Standard,Science,1
+365,19,Michael,Brown,teacher365@centralusd.edu,555-3396,2021-12-11,3,Provisional,Music,1
+366,19,Michael,Jones,teacher366@centralusd.edu,555-7786,2017-07-15,7,Provisional,English,1
+367,19,David,Garcia,teacher367@centralusd.edu,555-8449,2016-08-11,8,Advanced,Math,1
+368,19,Sarah,Davis,teacher368@centralusd.edu,555-6869,2023-02-26,1,Advanced,Music,1
+369,19,James,Brown,teacher369@centralusd.edu,555-9105,2013-05-11,11,Standard,Art,1
+370,19,Michael,Davis,teacher370@centralusd.edu,555-6631,2018-11-25,6,Provisional,Math,1
+371,19,Lisa,Smith,teacher371@centralusd.edu,555-3035,2011-03-15,13,Standard,Math,1
+372,19,Jennifer,Williams,teacher372@centralusd.edu,555-5945,2016-03-28,8,Standard,English,1
+373,19,Emily,Jones,teacher373@centralusd.edu,555-2350,2020-06-22,4,Advanced,Science,1
+374,19,James,Jones,teacher374@centralusd.edu,555-4836,2010-07-21,14,Provisional,English,1
+375,19,Jennifer,Davis,teacher375@centralusd.edu,555-2276,2010-03-19,14,Provisional,Special Ed,1
+376,19,John,Garcia,teacher376@centralusd.edu,555-2975,2010-07-23,14,Provisional,Special Ed,1
+377,19,Jennifer,Miller,teacher377@centralusd.edu,555-2463,2011-12-26,13,Provisional,English,1
+378,19,Emily,Jones,teacher378@centralusd.edu,555-3246,2015-07-25,9,Provisional,Science,1
+379,20,John,Williams,teacher379@centralusd.edu,555-8210,2011-06-24,13,Provisional,Science,1
+380,20,Lisa,Brown,teacher380@centralusd.edu,555-2420,2016-02-05,8,Provisional,Music,1
+381,20,James,Garcia,teacher381@centralusd.edu,555-3290,2015-04-09,9,Advanced,English,1
+382,20,David,Smith,teacher382@centralusd.edu,555-5942,2013-04-17,11,Advanced,Social Studies,1
+383,20,James,Jones,teacher383@centralusd.edu,555-1894,2021-04-16,3,Standard,English,1
+384,20,Lisa,Johnson,teacher384@centralusd.edu,555-9655,2013-01-12,11,Standard,Science,1
+385,20,James,Garcia,teacher385@centralusd.edu,555-9951,2016-11-06,8,Standard,English,1
+386,20,Sarah,Smith,teacher386@centralusd.edu,555-5295,2010-04-02,14,Provisional,Music,1
+387,20,David,Miller,teacher387@centralusd.edu,555-7939,2018-12-13,6,Provisional,Science,1
+388,20,Sarah,Jones,teacher388@centralusd.edu,555-2294,2014-09-07,10,Provisional,Art,1
+389,20,Sarah,Jones,teacher389@centralusd.edu,555-8167,2016-12-28,8,Provisional,Math,1
+390,20,Sarah,Miller,teacher390@centralusd.edu,555-2900,2013-08-20,11,Advanced,Math,1
+391,20,Michael,Johnson,teacher391@centralusd.edu,555-1207,2014-12-05,10,Advanced,Math,1
+392,20,Lisa,Garcia,teacher392@centralusd.edu,555-9568,2012-09-26,12,Advanced,PE,1
+393,20,Emily,Williams,teacher393@centralusd.edu,555-5403,2012-12-04,12,Provisional,Art,1
+394,20,James,Jones,teacher394@centralusd.edu,555-9582,2022-02-09,2,Advanced,English,1
+395,20,Lisa,Garcia,teacher395@centralusd.edu,555-1908,2017-08-28,7,Advanced,Science,1
+396,20,Michael,Jones,teacher396@centralusd.edu,555-2685,2015-10-22,9,Advanced,English,1
+397,20,John,Smith,teacher397@centralusd.edu,555-1201,2013-04-02,11,Standard,Art,1
+398,20,Michael,Williams,teacher398@centralusd.edu,555-1579,2016-09-26,8,Advanced,Music,1
+399,20,Emily,Brown,teacher399@centralusd.edu,555-7819,2013-12-11,11,Standard,English,1
+400,20,Emily,Johnson,teacher400@centralusd.edu,555-9225,2019-11-02,5,Provisional,Social Studies,1
+401,20,John,Miller,teacher401@centralusd.edu,555-2129,2022-08-28,2,Standard,PE,1
+402,20,Sarah,Davis,teacher402@centralusd.edu,555-1130,2015-06-07,9,Standard,PE,1
+403,20,Jennifer,Davis,teacher403@centralusd.edu,555-7033,2021-10-16,3,Provisional,Social Studies,1
+404,20,John,Miller,teacher404@centralusd.edu,555-1391,2012-04-18,12,Standard,Math,1
+405,20,John,Miller,teacher405@centralusd.edu,555-6038,2015-02-07,9,Advanced,Social Studies,1
+406,20,Lisa,Smith,teacher406@centralusd.edu,555-3332,2016-12-09,8,Provisional,Math,1
