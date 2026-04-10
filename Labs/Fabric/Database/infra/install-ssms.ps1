@@ -60,6 +60,30 @@ catch {
     Write-Log "Error installing SSMS: $_"
 }
 
+# ============================================================================
+# Install Git
+# ============================================================================
+try {
+    Write-Log "Installing Git for Windows (latest)..."
+    & 'C:\ProgramData\chocolatey\choco.exe' install git -y --no-progress 2>&1 | Tee-Object -FilePath 'C:\install-tools.log' -Append
+    Write-Log "Git installation completed"
+}
+catch {
+    Write-Log "Error installing Git: $_"
+}
+
+# ============================================================================
+# Clone Repository
+# ============================================================================
+try {
+    Write-Log "Cloning presentations-and-labs repository..."
+    & 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\repos\presentations-and-labs' 2>&1 | Tee-Object -FilePath 'C:\install-tools.log' -Append
+    Write-Log "Repository cloned to C:\repos\presentations-and-labs"
+}
+catch {
+    Write-Log "Error cloning repository: $_"
+}
+
 Write-Log "Post-deployment script execution completed"
 Write-Log "Installation log saved to C:\install-tools.log"
 
