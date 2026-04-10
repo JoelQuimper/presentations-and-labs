@@ -52,7 +52,7 @@ try {
     if (-not (Test-Path $chocoPath)) {
         Write-Log "Installing Chocolatey..."
         [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+        Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
         Write-Log "Chocolatey installation completed"
     } else {
         Write-Log "Chocolatey is already installed"
