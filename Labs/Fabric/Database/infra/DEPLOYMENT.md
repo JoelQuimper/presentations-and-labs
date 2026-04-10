@@ -134,7 +134,7 @@ The VM is automatically configured during deployment with two phases:
 #### 3.2 Verify SSMS is Installed
 
 1. **Search for SSMS** in the Start menu
-2. **Launch SQL Server Management Studio**
+2. **Launch SQL Server Management Studio** - when starting it the first time, if it ask to connect, you can click on "Skip and add account later".
 3. **Verify connection to SQL Server**:
    - Server name: `sql-k12-fabric-lab-<unique-suffix>.database.windows.net`
    - Authentication: **Entra ID - Universal with MFA**
