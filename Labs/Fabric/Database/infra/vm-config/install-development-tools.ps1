@@ -3,18 +3,25 @@
 # ============================================================================
 # This script runs on VM reboot (via scheduled task) to install:
 # - SQL Server Management Studio (SSMS)
-# - Visual Studio Community Edition
 #
 # Note: This script is scheduled as a task to run at startup after Phase 1 completes
 
 $ErrorActionPreference = 'Stop'
 $VerbosePreference = 'Continue'
 
+# Create Logs directory if it doesn't exist
+$logsDir = 'C:\Logs'
+if (-not (Test-Path $logsDir)) {
+    New-Item -ItemType Directory -Path $logsDir -Force | Out-Null
+}
+
+$logFile = 'C:\Logs\install-development-tools.log'
+
 # Logging function
 function Write-Log {
     param([string]$Message)
     $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
-    "$timestamp - $Message" | Out-File -FilePath 'C:\install-development-tools.log' -Append -Encoding UTF8
+    "$timestamp - $Message" | Out-File -FilePath $logFile -Append -Encoding UTF8
     Write-Host $Message
 }
 
@@ -34,24 +41,28 @@ Write-Log "OS: $([System.Runtime.InteropServices.RuntimeInformation]::OSDescript
 Write-Log "=== End Context ==="
 
 # ============================================================================
-# Verify Chocolatey is Available
+# Validate Chocolatey is Available
 # ============================================================================
-try {
-    Write-Log "Checking for Chocolatey..."
-    $chocoPath = 'C:\ProgramData\chocolatey\choco.exe'
-    
-    if (-not (Test-Path $chocoPath)) {
-        Write-Log "Installing Chocolatey..."
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-        Write-Log "Chocolatey installation completed"
-    } else {
-        Write-Log "Chocolatey is available"
-    }
+Write-Log "Validating Chocolatey is available..."
+$chocoPath = 'C:\ProgramData\chocolatey\choco.exe'
+
+if (-not (Test-Path $chocoPath)) {
+    Write-Log "ERROR: Chocolatey is not installed. Phase 1 (initialize-vm.ps1) should have installed it."
+    throw "Chocolatey not found at $chocoPath - Phase 1 initialization may have failed"
 }
-catch {
-    Write-Log "Warning: Chocolatey check encountered an issue: $_"
+Write-Log "Chocolatey is available"
+
+# ============================================================================
+# Validate Repository is Cloned
+# ============================================================================
+Write-Log "Validating repository is cloned..."
+$repoPath = 'C:\repos\presentations-and-labs'
+
+if (-not (Test-Path $repoPath)) {
+    Write-Log "ERROR: Repository not found at $repoPath. Phase 1 (initialize-vm.ps1) should have cloned it."
+    throw "Repository not found at $repoPath - Phase 1 initialization may have failed"
 }
+Write-Log "Repository is available at $repoPath"
 
 # ============================================================================
 # Install SQL Server Management Studio (SSMS)
@@ -59,7 +70,7 @@ catch {
 try {
     Write-Log "Installing SQL Server Management Studio (SSMS)..."
     Write-Log "This may take 5-10 minutes..."
-    & 'C:\ProgramData\chocolatey\choco.exe' install ssms -y --no-progress 2>&1 | Tee-Object -FilePath 'C:\install-development-tools.log' -Append
+    & 'C:\ProgramData\chocolatey\choco.exe' install ssms -y --no-progress 2>&1 | Tee-Object -FilePath $logFile -Append
     Write-Log "SSMS installation completed successfully"
 }
 catch {
@@ -67,35 +78,10 @@ catch {
 }
 
 # ============================================================================
-# Install Visual Studio Community Edition
-# ============================================================================
-try {
-    Write-Log "Installing Visual Studio Community Edition..."
-    Write-Log "This may take 15-25 minutes and will require significant disk space..."
-    & 'C:\ProgramData\chocolatey\choco.exe' install visualstudio2022community -y --no-progress 2>&1 | Tee-Object -FilePath 'C:\install-development-tools.log' -Append
-    Write-Log "Visual Studio installation completed successfully"
-}
-catch {
-    Write-Log "Error installing Visual Studio: $_"
-}
-
-# ============================================================================
 # Installation Complete
 # ============================================================================
 Write-Log "Phase 2 development tools installation completed"
-Write-Log "Installation log saved to C:\install-development-tools.log"
-Write-Log "You can now use SSMS and Visual Studio on this VM"
-
-# ============================================================================
-# Remove Scheduled Task (Optional - clean up after successful execution)
-# ============================================================================
-try {
-    Write-Log "Removing scheduled task 'Install-Development-Tools'..."
-    Unregister-ScheduledTask -TaskName 'Install-Development-Tools' -Confirm:$false -ErrorAction SilentlyContinue
-    Write-Log "Scheduled task removed"
-}
-catch {
-    Write-Log "Note: Could not remove scheduled task: $_"
-}
+Write-Log "Installation log saved to $logFile"
+Write-Log "You can now use SSMS on this VM"
 
 Write-Log "Phase 2 script execution finished"

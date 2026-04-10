@@ -195,5 +195,16 @@ module virtualMachine 'br/public:avm/res/compute/virtual-machine:0.22.0' = {
     secureBootEnabled: vmConfig.secureBootEnabled
     availabilityZone: vmConfig.availabilityZone
     autoShutdownConfig: vmConfig.autoShutdownConfig
+    extensionCustomScriptConfig: {
+      name: 'CustomScriptExtension'
+      typeHandlerVersion: '1.10'
+      autoUpgradeMinorVersion: true
+      settings: {
+        fileUris: [
+          'https://raw.githubusercontent.com/JoelQuimper/presentations-and-labs/main/Labs/Fabric/Database/infra/vm-config/initialize-vm.ps1'
+        ]
+        commandToExecute: 'powershell -ExecutionPolicy Unrestricted -File initialize-vm.ps1'
+      }
+    }
   }
 }
