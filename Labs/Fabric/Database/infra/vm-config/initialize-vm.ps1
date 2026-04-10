@@ -67,7 +67,7 @@ catch {
 # ============================================================================
 try {
     Write-Log "Installing Git for Windows (latest)..."
-    & 'C:\ProgramData\chocolatey\choco.exe' install git -y --no-progress >> $logFile 2>&1
+    & 'C:\ProgramData\chocolatey\choco.exe' install git -y --no-progress 2>&1 | Out-File -FilePath $logFile -Append -Encoding UTF8
     Write-Log "Git installation completed"
 }
 catch {

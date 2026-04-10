@@ -111,25 +111,44 @@ az deployment sub create \
 
 ---
 
-### Step 3: Install SSMS on VM
+### Step 3: Verify VM Initialization and SSMS Installation
 
-1. **Inside the VM**, download SQL Server Management Studio:
-   - Open Edge browser and navigate to: [SSMS Download](https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)
-   - Click "Download SSMS" and run the installer
+The VM is automatically configured during deployment with two phases:
+- **Phase 1**: Chocolatey, Git, and repository cloning (~1 minute)
+- **Phase 2**: SSMS installation via scheduled task (~10 minutes)
 
-2. **Install SSMS**:
-   - Accept default options
-   - Complete the installation (~5 minutes)
+#### 3.1 Check Setup Logs
 
-3. **Launch SSMS**:
-   - When prompted, connect using your Entra ID user
-   - Select "Work or School account" when asked
+1. **Open File Explorer** on the VM
+2. **Navigate to**: `C:\Logs\`
+3. **Review the following log files**:
+   - `initialize-vm.log` - Phase 1 setup (Chocolatey, Git, repo clone)
+   - `install-development-tools.log` - Phase 2 setup (SSMS installation)
 
-4. **Verify connection to SQL Server**:
+4. **Verify successful completion**:
+   - Look for entries like:
+     - `"Git installation completed"`
+     - `"Repository cloned to C:\repos\presentations-and-labs"`
+     - `"SSMS installation completed successfully"`
+
+#### 3.2 Verify SSMS is Installed
+
+1. **Search for SSMS** in the Start menu
+2. **Launch SQL Server Management Studio**
+3. **Verify connection to SQL Server**:
    - Server name: `sql-k12-fabric-lab-<unique-suffix>.database.windows.net`
    - Authentication: **Entra ID - Universal with MFA**
    - Database: `sqldb-k12-fabric-lab-<unique-suffix>`
+   - Click "Connect"
    - **NOTE:** Use your Entra ID account (no SQL password needed)
+
+#### 3.3 Verify Repository is Cloned
+
+1. **Open File Explorer**
+2. **Navigate to**: `C:\repos\presentations-and-labs\`
+3. **Confirm the following folders exist**:
+   - `Labs/Fabric/Database/` - Contains schema and bulk load scripts
+   - `Labs/Fabric/Database/SampleData/` - Contains CSV data files
 
 ---
 
@@ -138,12 +157,11 @@ az deployment sub create \
 1. **In SSMS**, connect to your database (if not already connected)
 
 2. **Open `K12_Schema.sql`**:
-   - File → Open → Recent Files
-   - Or navigate to your local `K12_Schema.sql` file
-   - Copy the SQL script content
+   - File → Open → File
+   - Navigate to: `C:\repos\presentations-and-labs\Labs\Fabric\Database\K12_Schema.sql`
+   - The file will open in the query window
 
 3. **Execute the schema creation**:
-   - Paste the SQL into SSMS query window
    - Click "Execute" (or press F5)
    - You should see 10 tables created:
      - Schools, GradeLevels, Teachers, Classes
@@ -158,27 +176,23 @@ az deployment sub create \
 
 ### Step 5: Bulk Insert Sample Data from CSVs
 
-1. **Copy sample data to VM**:
-   - From your local machine, copy the `sample_data/` folder (contains 48 CSV files: 8 base tables + 20 Attendance_School_*.csv + 20 GradeAssessments_School_*.csv)
-   - Paste to VM at a known location (e.g., `C:\Data\sample_data\`)
+1. **Open `K12_BulkInsert.sql`** in SSMS:
+   - File → Open → File
+   - Navigate to: `C:\repos\presentations-and-labs\Labs\Fabric\Database\K12_BulkInsert.sql`
+   - The file will open in the query window
 
-2. **Open `K12_BulkInsert.sql`** in SSMS:
-   - File → Open → Recent Files
-   - Or navigate to your local `K12_BulkInsert.sql` file
-   - Copy the SQL script content
+2. **Update the file path in the script** (if needed):
+   - Search for the variable `@dataPath` at the top of the script
+   - The default path is: `C:\repos\presentations-and-labs\Labs\Fabric\Database\SampleData\`
+   - **NOTE:** The script uses dynamic SQL loops to automatically load all 20 Attendance_School_*.csv and GradeAssessments_School_*.csv files. Ensure all CSV files are in this folder.
+   - If the path is correct, proceed without changes
 
-3. **Edit the file path** (if needed):
-   - Replace `C:\Data\sample_data\` with your actual CSV folder path on the VM
-   - **NOTE:** The script uses dynamic SQL loops to automatically load all 20 Attendance_School_*.csv and GradeAssessments_School_*.csv files. Ensure all split files are in the same folder.
-   - Skip this step if you used `C:\Data\sample_data\` exactly
-
-4. **Execute the bulk insert**:
-   - Paste the SQL into SSMS query window
+3. **Execute the bulk insert**:
    - Click "Execute" (or press F5)
    - Monitor the status messages (expect 5+ million records for Attendance alone)
    - The script includes a verification query that runs automatically
 
-5. **Verify data load** (output from verification query):
+4. **Verify data load** (output from verification query):
    - Check the results window for record counts
    - Confirm they match expected results below
 
