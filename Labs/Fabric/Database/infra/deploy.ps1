@@ -6,6 +6,8 @@ param(
     [string]$DeploymentName = "k12lab-deployment"
 )
 
+$ErrorActionPreference = 'Stop'
+
 Write-Host ""
 Write-Host "K12 Fabric Lab Infrastructure Deployment"
 Write-Host "=============================================="
