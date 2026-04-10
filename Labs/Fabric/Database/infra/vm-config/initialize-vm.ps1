@@ -67,7 +67,7 @@ catch {
 # ============================================================================
 try {
     Write-Log "Installing Git for Windows (latest)..."
-    & 'C:\ProgramData\chocolatey\choco.exe' install git -y --no-progress 2>&1 | Out-File -FilePath $logFile -Append -Encoding UTF8
+    C:\ProgramData\chocolatey\choco.exe install git -y --no-progress > $null 2>&1
     Write-Log "Git installation completed"
 }
 catch {
@@ -79,8 +79,13 @@ catch {
 # ============================================================================
 try {
     Write-Log "Cloning presentations-and-labs repository..."
-    & 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\repos\presentations-and-labs' 2>&1 | Tee-Object -FilePath $logFile -Append
-    Write-Log "Repository cloned to C:\repos\presentations-and-labs"
+    & 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\repos\presentations-and-labs' > $null 2>&1
+    
+    if (Test-Path 'C:\repos\presentations-and-labs') {
+        Write-Log "Repository cloned successfully to C:\repos\presentations-and-labs"
+    } else {
+        Write-Log "Error: Repository clone failed - directory not found"
+    }
 }
 catch {
     Write-Log "Error cloning repository: $_"
