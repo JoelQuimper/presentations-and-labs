@@ -70,7 +70,7 @@ Write-Log "Repository is available at $repoPath"
 try {
     Write-Log "Installing SQL Server Management Studio (SSMS)..."
     Write-Log "This may take 5-10 minutes..."
-    & 'C:\ProgramData\chocolatey\choco.exe' install ssms -y --no-progress 2>&1 | Tee-Object -FilePath $logFile -Append
+    & 'C:\ProgramData\chocolatey\choco.exe' install ssms -y --no-progress >> $logFile 2>&1
     Write-Log "SSMS installation completed successfully"
 }
 catch {
