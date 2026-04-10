@@ -19,8 +19,18 @@ function Write-Log {
 Write-Log "Starting post-deployment installation..."
 
 # ============================================================================
-# Install Chocolatey (if not already installed)
+# Log Execution Context for Debugging
 # ============================================================================
+Write-Log "=== Execution Context ==="
+Write-Log "PowerShell Version: $($PSVersionTable.PSVersion)"
+Write-Log "Current User: $([System.Security.Principal.WindowsIdentity]::GetCurrent().Name)"
+Write-Log "Is Administrator: $(([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator'))"
+Write-Log "Current Directory: $(Get-Location)"
+Write-Log "Execution Policy (Process): $(Get-ExecutionPolicy -Scope Process)"
+Write-Log "Execution Policy (CurrentUser): $(Get-ExecutionPolicy -Scope CurrentUser)"
+Write-Log "Execution Policy (LocalMachine): $(Get-ExecutionPolicy -Scope LocalMachine)"
+Write-Log "OS: $([System.Runtime.InteropServices.RuntimeInformation]::OSDescription)"
+Write-Log "=== End Context ==="
 try {
     Write-Log "Checking for Chocolatey..."
     $chocoPath = 'C:\ProgramData\chocolatey\choco.exe'
