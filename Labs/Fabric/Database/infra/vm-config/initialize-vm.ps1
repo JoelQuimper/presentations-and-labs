@@ -79,12 +79,12 @@ catch {
 # Clone Repository
 # ============================================================================
 Write-Log "Cloning presentations-and-labs repository..."
-& 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\repos\presentations-and-labs' > $null 2>&1
+& 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\Repos\presentations-and-labs' > $null 2>&1
 
 
 # Strangely, the repo gets cloned but an error is thrown, since all work I removed the try/catch and exit if the repos not found
-if (Test-Path 'C:\repos\presentations-and-labs') {
-    Write-Log "Repository cloned successfully to C:\repos\presentations-and-labs"
+if (Test-Path 'C:\Repos\presentations-and-labs') {
+    Write-Log "Repository cloned successfully to C:\Repos\presentations-and-labs"
 } else {
     Write-Log "CRITICAL ERROR: Repository clone failed - directory not found"
     exit 1
@@ -96,7 +96,7 @@ if (Test-Path 'C:\repos\presentations-and-labs') {
 try {
     Write-Log "Registering Phase 2 installation task..."
     
-    $scriptPath = 'C:\repos\presentations-and-labs\Labs\Fabric\Database\infra\vm-config\install-development-tools.ps1'
+    $scriptPath = 'C:\Repos\presentations-and-labs\Labs\Fabric\Database\infra\vm-config\install-development-tools.ps1'
     $taskName = 'Install-Development-Tools'
     $taskDescription = 'Phase 2: Install SSMS (scheduled to run 30 seconds after Phase 1)'
     
