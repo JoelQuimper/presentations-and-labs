@@ -8,7 +8,6 @@
 # - Register Phase 2 script as scheduled task
 # - Reboot
 
-$ErrorActionPreference = 'Stop'
 $VerbosePreference = 'Continue'
 
 # Create Logs directory if it doesn't exist
@@ -59,7 +58,8 @@ try {
     }
 }
 catch {
-    Write-Log "Warning: Chocolatey installation encountered an issue: $_"
+    Write-Log "CRITICAL ERROR: Chocolatey installation failed: $_"
+    exit 1
 }
 
 # ============================================================================
@@ -71,24 +71,23 @@ try {
     Write-Log "Git installation completed"
 }
 catch {
-    Write-Log "Error installing Git: $_"
+    Write-Log "CRITICAL ERROR: Git installation failed: $_"
+    exit 1
 }
 
 # ============================================================================
 # Clone Repository
 # ============================================================================
-try {
-    Write-Log "Cloning presentations-and-labs repository..."
-    & 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\repos\presentations-and-labs' > $null 2>&1
-    
-    if (Test-Path 'C:\repos\presentations-and-labs') {
-        Write-Log "Repository cloned successfully to C:\repos\presentations-and-labs"
-    } else {
-        Write-Log "Error: Repository clone failed - directory not found"
-    }
-}
-catch {
-    Write-Log "Error cloning repository: $_"
+Write-Log "Cloning presentations-and-labs repository..."
+& 'C:\Program Files\Git\cmd\git.exe' clone https://github.com/JoelQuimper/presentations-and-labs.git 'C:\repos\presentations-and-labs' > $null 2>&1
+
+
+# Strangely, the repo gets cloned but an error is thrown, since all work I removed the try/catch and exit if the repos not found
+if (Test-Path 'C:\repos\presentations-and-labs') {
+    Write-Log "Repository cloned successfully to C:\repos\presentations-and-labs"
+} else {
+    Write-Log "CRITICAL ERROR: Repository clone failed - directory not found"
+    exit 1
 }
 
 # ============================================================================
