@@ -17,10 +17,23 @@ Sample K12 education database for Fabric end-to-end lab environment.
 ## Quick Start
 
 ### Step 1: Deploy Infrastructure
-Set up Azure resources (SQL Database, VM, networking). See `infra/DEPLOYMENT.md` for detailed steps. The deployment takes 10-15 minutes and creates all required resources.
+Set up Azure resources (SQL Database, VM, networking). See `infra/DEPLOYMENT.md` for detailed steps. The deployment takes 10-15 minutes and creates all required resources. 
+
+### Step 2: Connect in the VM
+In the Azure Portal, navigate to the VM that was created during the deployment and connect using bastion.
+![Connect to VM using bastion](images/vm-bastion-connection.png)
+
 
 ### Step 2: Create Database Schema
-Run `K12_Schema.sql` in SSMS or Azure Query Editor against your SQL Database.
+In the Azure Portal, navigate to the database. Copy the server name.
+![Copy database server name from Azure Portal](images/copy-database-server-name.png)
+
+Once in the VM, start SSMS. If prompt to login, just skip it. Once in SSMS, connect to the database using the copied server name.  Select Entra MFA for authentication and use your Entra Id account to connect.
+
+In SSMS, open the `K12_Schema.sql` file.  It is located in `C:\Repos\presentations-and-labs\Labs\Fabric\Database`
+
+Run `K12_Schema.sql` in SSMS against your SQL Database.  Make sure you selected your database and not `master`.
+![Create database schema](images/create-schema.png)
 
 ### Step 3: Load Data
 Run `K12_BulkInsert.sql` in SSMS to load all CSV files from `SampleData/`. The script includes a verification query showing expected record counts.
