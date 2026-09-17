@@ -8,6 +8,10 @@
 # - Register Phase 2 script as scheduled task
 # - Reboot
 
+param(
+    [string]$StorageAccountName
+)
+
 $VerbosePreference = 'Continue'
 
 # Create Logs directory if it doesn't exist
@@ -27,6 +31,7 @@ function Write-Log {
 }
 
 Write-Log "Starting VM initialization (Phase 1)..."
+Write-Log "Storage Account Name: $StorageAccountName"
 
 # ============================================================================
 # Log Execution Context for Debugging
@@ -50,15 +55,56 @@ try {
     
     if (-not (Test-Path $chocoPath)) {
         Write-Log "Installing Chocolatey..."
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-        Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-        Write-Log "Chocolatey installation completed"
+        
+        # Set strong TLS and add timeout
+        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12 -bor [System.Net.SecurityProtocolType]::Tls13
+        
+        $maxRetries = 3
+        $retryCount = 0
+        $installed = $false
+        
+        while ($retryCount -lt $maxRetries -and -not $installed) {
+            try {
+                Write-Log "Chocolatey installation attempt $($retryCount + 1) of $maxRetries..."
+                $webClient = New-Object System.Net.WebClient
+                $webClient.Proxy = [System.Net.GlobalProxySelection]::GetEmptyWebProxy()
+                $webClient.Timeout = 30000
+                $chocoInstallScript = $webClient.DownloadString('https://community.chocolatey.org/install.ps1')
+                Invoke-Expression $chocoInstallScript
+                $installed = $true
+                Write-Log "Chocolatey installation completed"
+            }
+            catch {
+                $retryCount++
+                if ($retryCount -lt $maxRetries) {
+                    Write-Log "Installation attempt failed: $_. Retrying in 10 seconds..."
+                    Start-Sleep -Seconds 10
+                } else {
+                    throw $_
+                }
+            }
+        }
+        
+        if (-not $installed) {
+            throw "Failed to install Chocolatey after $maxRetries attempts"
+        }
     } else {
         Write-Log "Chocolatey is already installed"
     }
 }
 catch {
     Write-Log "CRITICAL ERROR: Chocolatey installation failed: $_"
+    Write-Log "Diagnostics: Checking network connectivity..."
+    try {
+        $testDns = Resolve-DnsName community.chocolatey.org -ErrorAction SilentlyContinue
+        if ($testDns) {
+            Write-Log "DNS resolution successful: $($testDns.IPAddress)"
+        } else {
+            Write-Log "DNS resolution failed for community.chocolatey.org"
+        }
+    } catch {
+        Write-Log "DNS check error: $_"
+    }
     exit 1
 }
 

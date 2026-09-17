@@ -1,11 +1,12 @@
 using './main.bicep'
 
+param workloadName = 'k12-fabric-lab'
 param uniqueSuffix = '<UNIQUE SUFFIX>'
 
 // VNet Configuration
 param vnetConfig = {
   addressPrefix: '10.0.0.0/16'
-  sqlSubnetPrefix: '10.0.1.0/24'
+  storageSubnetPrefix: '10.0.1.0/24'
   vmSubnetPrefix: '10.0.2.0/24'
 }
 
@@ -66,4 +67,10 @@ param vmConfig = {
     status: 'Enabled'
     timeZone: 'Eastern Standard Time'
   }
+}
+
+param storageConfig = {
+  kind: 'StorageV2'
+  skuName: 'Standard_LRS'
+  allowBlobPublicAccess: false
 }

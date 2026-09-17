@@ -8,7 +8,7 @@ targetScope = 'subscription'
 // Parameters
 // ============================================================================
 @description('Workload name')
-param workloadName string = 'k12-fabric-lab'
+param workloadName string
 
 @description('Azure region for resources and resource group')
 param location string = deployment().location
@@ -29,19 +29,23 @@ param vmCredentials object
 @description('VM configuration object')
 param vmConfig object
 
+@description('Storage account configuration object')
+param storageConfig object
+
 // ============================================================================
 // Variables
 // ============================================================================
 var resourceGroupName = 'rg-${workloadName}-${uniqueSuffix}'
-var sqlServerName = 'sql-${workloadName}-${uniqueSuffix}'
-var sqlDatabaseName = 'sqldb-${workloadName}-${uniqueSuffix}'
+var nsgName = 'nsg-${workloadName}-${uniqueSuffix}'
 var vnetName = 'vnet-${workloadName}-${uniqueSuffix}'
 var bastionName = 'bastion-${vnetName}'
-var vmName = 'vm-${workloadName}-${uniqueSuffix}'
-var nsgName = 'nsg-${workloadName}-${uniqueSuffix}'
+var sqlServerName = 'sql-${workloadName}-${uniqueSuffix}'
+var sqlDatabaseName = 'sqldb-${workloadName}-${uniqueSuffix}'
 var sqlPrivateEndpointName = 'pep-${sqlServerName}'
+var vmName = 'vm-${workloadName}-${uniqueSuffix}'
 var vmNicName = 'nic-${vmName}'
-
+var storageAccountName = replace('st-${workloadName}-${uniqueSuffix}', '-', '')
+var storagePrivateEndpointName = 'pep-${storageAccountName}'
 
 // ============================================================================
 // Resource Group
@@ -77,8 +81,8 @@ module vnet 'br/public:avm/res/network/virtual-network:0.8.0' = {
     ]
     subnets: [
       {
-        name: 'sql-subnet'
-        addressPrefix: vnetConfig.sqlSubnetPrefix
+        name: 'storage-subnet'
+        addressPrefix: vnetConfig.storageSubnetPrefix
         networkSecurityGroupResourceId: nsg.outputs.resourceId
         serviceEndpoints: [
           'Microsoft.Sql'
@@ -110,11 +114,28 @@ module bastion 'br/public:avm/res/network/bastion-host:0.8.2' = {
 // ============================================================================
 // Private DNS Zone for SQL Server
 // ============================================================================
-module privateDnsZone 'br/public:avm/res/network/private-dns-zone:0.8.1' = {
+module sqlPrivateDnsZone 'br/public:avm/res/network/private-dns-zone:0.8.1' = {
   scope: rg
   name: 'deploy-dns-${sqlPrivateEndpointName}'
   params: {
     name: 'privatelink${environment().suffixes.sqlServerHostname}'
+    virtualNetworkLinks: [
+      {
+        registrationEnabled: false
+        virtualNetworkResourceId: vnet.outputs.resourceId
+      }
+    ]
+  }
+}
+
+// ============================================================================
+// Private DNS Zone for Storage Account
+// ============================================================================
+module storagePrivateDnsZone 'br/public:avm/res/network/private-dns-zone:0.8.1' = {
+  scope: rg
+  name: 'deploy-dns-${storagePrivateEndpointName}'
+  params: {
+    name: 'privatelink.blob.${environment().suffixes.storage}'
     virtualNetworkLinks: [
       {
         registrationEnabled: false
@@ -147,6 +168,9 @@ module sqlServer 'br/public:avm/res/sql/server:0.21.1' = {
       }
     ]
     location: location
+    managedIdentities:{
+      systemAssigned:true
+    }
     privateEndpoints: [
       {
         name: sqlPrivateEndpointName
@@ -154,7 +178,7 @@ module sqlServer 'br/public:avm/res/sql/server:0.21.1' = {
         privateDnsZoneGroup: {
           privateDnsZoneGroupConfigs: [
             {
-              privateDnsZoneResourceId: privateDnsZone.outputs.resourceId
+              privateDnsZoneResourceId: sqlPrivateDnsZone.outputs.resourceId
             }
           ]
         }
@@ -194,6 +218,9 @@ module virtualMachine 'br/public:avm/res/compute/virtual-machine:0.22.0' = {
     vTpmEnabled: vmConfig.vtpmEnabled
     secureBootEnabled: vmConfig.secureBootEnabled
     availabilityZone: vmConfig.availabilityZone
+    managedIdentities: {
+      systemAssigned: true
+    }
     autoShutdownConfig: vmConfig.autoShutdownConfig
     extensionCustomScriptConfig: {
       name: 'CustomScriptExtension'
@@ -203,8 +230,47 @@ module virtualMachine 'br/public:avm/res/compute/virtual-machine:0.22.0' = {
         fileUris: [
           'https://raw.githubusercontent.com/JoelQuimper/presentations-and-labs/main/Labs/Fabric/Database/infra/vm-config/initialize-vm.ps1'
         ]
-        commandToExecute: 'powershell -ExecutionPolicy Unrestricted -File initialize-vm.ps1'
+        commandToExecute: 'powershell -ExecutionPolicy Unrestricted -File initialize-vm.ps1 -StorageAccountName ${storageAccountName}'
       }
     }
+  }
+}
+
+module storageAccount 'br/public:avm/res/storage/storage-account:0.32.0' = {
+  scope: rg
+  name: 'deploy-${storageAccountName}'
+  params: {
+    // Required parameters
+    name: storageAccountName
+    // Non-required parameters
+    kind: storageConfig.kind
+    skuName: storageConfig.skuName
+    allowBlobPublicAccess: storageConfig.allowBlobPublicAccess
+    privateEndpoints: [
+      {
+        name: storagePrivateEndpointName
+        service: 'blob'
+        subnetResourceId: vnet.outputs.subnetResourceIds[0]
+        privateDnsZoneGroup: {
+          privateDnsZoneGroupConfigs: [
+            {
+              privateDnsZoneResourceId: storagePrivateDnsZone.outputs.resourceId
+            }
+          ]
+        }
+      }
+    ]
+    roleAssignments: [
+    {
+      principalId: virtualMachine.outputs.?systemAssignedMIPrincipalId ?? ''
+      principalType: 'ServicePrincipal'
+      roleDefinitionIdOrName: 'ba92f5b4-2d11-453d-a403-e96b0029c9fe'
+    }
+    {
+      principalId: sqlServer.outputs.?systemAssignedMIPrincipalId ?? ''
+      principalType: 'ServicePrincipal'
+      roleDefinitionIdOrName: 'ba92f5b4-2d11-453d-a403-e96b0029c9fe'
+    }
+  ]
   }
 }
